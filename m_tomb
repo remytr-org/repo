@@ -1,0 +1,12 @@
+#!/bin/sh
+opkg install --force-reinstall  --force-depends enigma2-plugin-extensions-mediatomb
+curl https://github.com/PrivateTr/git_git/raw/master/remy-mediatomb-fix_V1.1_all.ipk -Lko /tmp/remy-mediatomb-fix_V1.1_all.ipk
+opkg --force-overwrite install /tmp/remy-mediatomb-fix_V1.1_all.ipk
+opkg install --force-reinstall  --force-depends /tmp/remy-mediatomb-fix_V1.1_all.ipk
+sleep 1
+echo ""
+echo "               ***  MEDIATOMB_HOME_SERVER_KURULDU ***"
+echo ""
+echo " ***PC DEN KANALLARINIZI VEYA FILMLERINIZI SERVERINIZA EKLEYINIZ ***"
+sleep 2
+reboot

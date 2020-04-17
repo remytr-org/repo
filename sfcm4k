@@ -1,0 +1,30 @@
+#!/bin/sh
+opkg update
+wget -O - -q http://updates.mynonpublic.com/oea/feed | bash >/dev/null 2>&1
+sleep 1
+opkg update
+opkg remove enigma2-plugin-softcams-remy-softcamapp-arm-4k
+rm -rf /usr/camscript > /dev/null
+sleep 1
+curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-softcams-remy-softcamapp-arm-4k_V1.0_all.ipk -Lko /tmp/enigma2-plugin-softcams-remy-softcamapp-arm-4k_V1.0_all.ipk
+sleep 1
+opkg --force-overwrite install /tmp/enigma2-plugin-softcams-remy-softcamapp-arm-4k_V1.0_all.ipk
+opkg install --force-reinstall /tmp/enigma2-plugin-softcams-remy-softcamapp-arm-4k_V1.0_all.ipk
+rm -rf /tmp/enigma2-plugin-softcams-remy-softcamapp-arm-4k_V1.0_all.ipk > /dev/null
+sleep 1
+opkg install enigma2-plugin-softcams-oscam-emu-ipv4only
+opkg install enigma2-plugin-softcams-ncam-ipv4only
+opkg install enigma2-plugin-softcams-cccam
+mv /usr/bin/oscam-emu /usr/bin/oscam_4K
+mv /usr/bin/ncam /usr/bin/ncam_4K
+rm -rf /etc/tuxbox/config/oscam-emu  >/dev/null 2>&1
+rm -rf /etc/tuxbox/config/ncam  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.ncam  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.oscam-emu  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.CCcam  >/dev/null 2>&1
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/SK -Lko /etc/tuxbox/config/SoftCam.Key
+/usr/bin/oscam_4K -b -c /etc/tuxbox/config
+echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
+echo  'https://www.youtube.com/c/ReMyTr'
+sleep 2
+killall -9 enigma2

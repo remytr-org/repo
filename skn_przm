@@ -1,0 +1,8 @@
+#!/bin/sh
+curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-skins-prizma-mod_4.0_all.ipk -Lko /tmp/enigma2-plugin-skins-prizma-mod_4.0_all.ipk
+opkg --force-overwrite install /tmp/enigma2-plugin-skins-prizma-mod_4.0_all.ipk
+opkg install --force-reinstall /tmp/enigma2-plugin-skins-prizma-mod_4.0_all.ipk
+echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
+echo  'https://www.youtube.com/c/ReMyTr'
+sleep 2
+killall -9 enigma2

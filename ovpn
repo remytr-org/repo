@@ -1,0 +1,17 @@
+#!/bin/sh
+curl https://github.com/PrivateTr/git_git/raw/master/remy-openvpn_V1.1_all.ipk -Lko /tmp/remy-openvpn_V1.1_all.ipk
+opkg install openvpn
+rm -rf /etc/openvpn > /dev/null
+opkg --force-overwrite install /tmp/remy-openvpn_V1.1_all.ipk
+opkg install --force-reinstall /tmp/remy-openvpn_V1.1_all.ipk
+rm -rf /tmp/remy-openvpn_V1.1_all.ipk > /dev/null
+echo ""
+echo "    *** https://www.vpnbook.com/ ***"
+echo ""
+echo "    ***  ADRESINDE ALTTAKI Password YAZAN SiFREYi ALIN ***"
+echo ""
+echo "    ***  ETC/OPENVPN/login.txt dosyasinda alt satira yapistiriniz. ***"
+echo ""
+echo "    ***  OK VEYA EXIT TUSUNA BASINIZ ***"
+echo ""
+exit 1

@@ -1,0 +1,24 @@
+#!/bin/sh
+opkg update
+wget -O - -q http://updates.mynonpublic.com/oea/feed | bash >/dev/null 2>&1
+sleep 1
+opkg update
+curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-softcams-remy-openatv-softcampanel_V2.1_all.ipk -Lko /tmp/enigma2-plugin-softcams-remy-openatv-softcampanel_V2.1_all.ipk
+sleep 1
+opkg --force-overwrite install /tmp/enigma2-plugin-softcams-remy-openatv-softcampanel_V2.1_all.ipk
+opkg install --force-reinstall /tmp/enigma2-plugin-softcams-remy-openatv-softcampanel_V2.1_all.ipk
+sleep 1
+rm -rf /tmp/enigma2-plugin-softcams-remy-openatv-softcampanel_V2.1_all.ipk  >/dev/null 2>&1
+sleep 1
+opkg install enigma2-plugin-softcams-oscam-emu-ipv4only
+opkg install enigma2-plugin-softcams-ncam-ipv4only
+opkg install enigma2-plugin-softcams-cccam
+mv /usr/bin/oscam-emu /usr/bin/oscam
+rm -rf /etc/tuxbox/config/oscam-emu  >/dev/null 2>&1
+rm -rf /etc/tuxbox/config/ncam  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.ncam  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.oscam-emu  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.CCcam  >/dev/null 2>&1
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/SK -Lko /etc/tuxbox/config/SoftCam.Key >/dev/null 2>&1
+/usr/bin/oscam -b -c /etc/tuxbox/config
+killall -9 enigma2

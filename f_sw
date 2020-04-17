@@ -1,0 +1,11 @@
+#!/bin/sh
+opkg remove enigma2-plugin-extensions-freecccam
+rm -rf /usr/lib/enigma2/python/Components/Renderer/ReMyAnimatedPicsmap.pyo > /dev/null
+curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-extensions-freecccam_5.2_all.ipk -Lko /tmp/enigma2-plugin-extensions-freecccam_5.2_all.ipk
+opkg --force-overwrite install /tmp/enigma2-plugin-extensions-freecccam_5.2_all.ipk
+opkg install --force-reinstall /tmp/enigma2-plugin-extensions-freecccam_5.2_all.ipk
+rm -rf /tmp/enigma2-plugin-extensions-freecccam_5.2_all.ipk > /dev/null
+echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
+echo  'https://www.youtube.com/c/ReMyTr'
+sleep 2
+killall -9 enigma2

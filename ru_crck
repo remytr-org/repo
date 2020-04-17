@@ -1,0 +1,9 @@
+#!/bin/sh
+curl https://github.com/PrivateTr/git_git/raw/master/remy-rudream-crackbackup_V1.1_all.ipk -Lko /tmp/remy-rudream-crackbackup_V1.1_all.ipk
+opkg --force-overwrite install /tmp/remy-rudream-crackbackup_V1.1_all.ipk
+opkg install --force-reinstall --force-depends /tmp/remy-rudream-crackbackup_V1.1_all.ipk
+rm -rf /tmp/remy-rudream-crackbackup_V1.1_all.ipk > /dev/null
+echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
+echo  'https://www.youtube.com/c/ReMyTr'
+sleep 2
+killall -9 enigma2

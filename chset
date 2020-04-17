@@ -1,0 +1,13 @@
+#!/bin/sh
+opkg remove enigma2-plugin-settings-remy.motor-channel-settings
+rm -rf /etc/enigma2/*.del > /dev/null
+rm -rf /etc/enigma2/*.tv_org
+rm -rf /etc/enigma2/*.tv_bak
+curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-settings-remy.motor-channel-settings_V2.1_all.ipk -Lko /tmp/enigma2-plugin-settings-remy.motor-channel-settings_V2.1_all.ipk
+opkg --force-overwrite install /tmp/enigma2-plugin-settings-remy.motor-channel-settings_V2.1_all.ipk
+opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-settings-remy.motor-channel-settings_V2.1_all.ipk
+wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 > /dev/null 2>&1
+echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
+echo  'https://www.youtube.com/c/ReMyTr'
+sleep 2
+killall -9 enigma2

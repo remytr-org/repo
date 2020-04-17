@@ -1,0 +1,52 @@
+#!/bin/sh
+rm -rf /tmp/*.m3u
+rm -rf /tmp//usr/lib/enigma2/python/Plugins/Extensions/m3u_Pro/m3u_ProM3U/*.m3u
+rm -rf /etc/enigma2/*.del > /dev/null
+rm -rf /etc/enigma2/*.tv_org
+rm -rf /etc/enigma2/*.tv_bak
+sleep 1
+
+wget -O /tmp/DMRWOLFIEINC_UK.m3u "https://github.com/DMRWOLFIEINC/iptv/blob/master/iptv3"
+
+wget -O /tmp/DMRWOLFIEINC_USA.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv2"
+
+wget -O /tmp/ReMy_XxX.m3u "https://github.com/PrivateTr/git_git/raw/master/remy_xxx.m3u"
+
+wget -O /tmp/ReMy_Premium.m3u "https://github.com/PrivateTr/git_git/raw/master/remy_premium.m3u"
+
+wget -O /tmp/ARAP_FILM.m3u "http://62.210.139.197:25461/get.php?username=test&password=test&type=m3u"
+
+wget -O /tmp/GoCast2-Oriental-Istana2.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast2/Oriental/Istana.m3u8"
+
+wget -O /tmp/GoCast-Oriental-Istana.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Oriental/Istana.m3u8"
+
+wget -O /tmp/GoCast-Oriental-Gugong.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Oriental/Gugong.m3u8"
+
+wget -O /tmp/GoCast-Oriental-Eden.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Oriental/Eden.m3u8"
+
+wget -O /tmp/GoCast-Hindustan-TajMahal.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Hindustan/TajMahal.m3u8"
+
+wget -O /tmp/GoCast-Hindustan-RamBagh.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Hindustan/RamBagh.m3u8"
+
+wget -O /tmp/GoCast-Hindustan-Aranmanai.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Hindustan/Aranmanai.m3u8"
+
+wget -O /tmp/GoCast-Europa-Versailles.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Europa/Versailles.m3u8"
+
+wget -O /tmp/GoCast-Europa-Palacio.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Europa/Palacio.m3u8"
+
+wget -O /tmp/GoCast-Europa-Kremlin.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Europa/Kremlin.m3u8"
+
+wget -O /tmp/GoCast-Europa-Buckingham.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Europa/Buckingham.m3u8"
+
+wget -O /tmp/iptvpro2.m3u "http://iptvpro.vision-new.org:8789/get.php?username=IPTVPRO22VODS22&password=W2T29z9cBP&type=m3u"
+
+wget -O /tmp/iptvpro.m3u "http://iptvpro.vision-new.org:8789/get.php?username=IPTVPRO22VODS22PRO2&password=W2T29z9cBPPRO2&type=m3u"
+
+wget -O /tmp/rmcsport5.m3u "http://iptv7.premium-stv.com:25461/get.php?username=rmcsport5&password=2350888447&type=m3u"
+
+wget -O /tmp/rmcsport3.m3u "http://iptv7.premium-stv.com:25461/get.php?username=rmcsport3&password=1557539943&type=m3u"
+
+wget -O /tmp/gnsportfrshtf1.m3u "http://iptv7.premium-stv.com:25461/get.php?username=gnsportfrshtf1&password=fqzo522Da264&type=m3u"
+sleep 1
+rm -rf /tmp/iptvm3upro
+exit 0

@@ -1,0 +1,31 @@
+#!/bin/sh
+echo '#############################################'
+echo '#     REMY MATRIX MOD BACKUP                #'
+echo '#############################################'
+echo $LINE
+echo 'LUTFEN BEKLEYIN BACKUP HAZIRLANIYOR'
+sleep 1
+opkg install enigma2-plugin-extensions-dreamexplorer
+opkg install enigma2-plugin-extensions-memfree
+opkg install enigma2-plugin-extensions-mediainfo
+opkg install enigma2-plugin-extensions-subssupport
+opkg install enigma2-plugin-extensions-mediaportal
+opkg install enigma2-plugin-systemplugins-serviceapp
+curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-extensions-turkvod_10.41_all.ipk -Lko /tmp/enigma2-plugin-extensions-turkvod_10.41_all.ipk > /dev/null
+curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-extensions-freecccam_5.2_all.ipk -Lko /tmp/enigma2-plugin-extensions-freecccam_5.2_all.ipk > /dev/null
+curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-settings-remy.motor-channel-settings_V2.1_all.ipk -Lko /tmp/enigma2-plugin-settings-remy.motor-channel-settings_V2.1_all.ipk > /dev/null
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/enigma2-plugin-extensions-mpgz_all.ipk -Lko /tmp/enigma2-plugin-extensions-mpgz_all.ipk > /dev/null
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/bootlogo.mvi -Lko /usr/share/bootlogo.mvi > /dev/null 2>&1
+opkg --force-overwrite install /tmp/enigma2-plugin-extensions-turkvod_10.76_all.ipk
+opkg --force-overwrite install /tmp/enigma2-plugin-extensions-freecccam_5.2_all.ipk
+opkg --force-overwrite install /tmp/enigma2-plugin-settings-remy.motor-channel-settings_V2.1_all.ipk
+opkg --force-overwrite install /tmp/enigma2-plugin-extensions-mpgz_all.ipk
+opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-extensions-turkvod_10.76_all.ipk
+opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-extensions-freecccam_5.2_all.ipk
+opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-settings-remy.motor-channel-settings_V2.1_all.ipk
+opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-extensions-mpgz_all.ipk
+wget -qO - http://127.0.0.1/web/servicelistreload?mode=0 > /dev/null 2>&1
+opkg update && opkg upgrade
+echo 'BACKUP KURULUMU TAMAMLANDI CIHAZ YENIDEN BASLATILIYOR'
+sleep 2
+reboot

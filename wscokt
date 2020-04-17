@@ -1,0 +1,28 @@
+#!/bin/sh
+opkg install enigma2-plugin-systemplugins-serviceapp
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/streamlinksrv_1.0.1_all.ipk -Lko /tmp/streamlinksrv_1.0.1_all.ipk
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/530e8b7a44ffb73d52532693896a2918_uchardet_0.0.6-r0_mips32el.ipk -Lko /tmp/530e8b7a44ffb73d52532693896a2918_uchardet_0.0.6-r0_mips32el.ipk
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/python-iso3166_0.8_all.ipk -Lko /tmp/python-iso3166_0.8_all.ipk
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/python-iso639_0.4.5_all.ipk -Lko /tmp/python-iso639_0.4.5_all.ipk
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/python-websocket_0.44.0_all.ipk -Lko /tmp/python-websocket_0.44.0_all.ipk
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/python-streamlink_0.10.0.r0_mod_all.ipk -Lko /tmp/python-streamlink_0.10.0.r0_mod_all.ipk
+curl https://github.com/PrivateTr/Zone_enigma/raw/master/python-singledispatch_3.4.0.3-r0_mips32el.ipk -Lko /tmp/python-singledispatch_3.4.0.3-r0_mips32el.ipk
+opkg --force-overwrite install /tmp/streamlinksrv_1.0.1_all.ipk
+opkg install --force-reinstall /tmp/streamlinksrv_1.0.1_all.ipk
+opkg --force-overwrite install /tmp/530e8b7a44ffb73d52532693896a2918_uchardet_0.0.6-r0_mips32el.ipk
+opkg install --force-reinstall /tmp/530e8b7a44ffb73d52532693896a2918_uchardet_0.0.6-r0_mips32el.ipk
+opkg --force-overwrite install /tmp/python-iso3166_0.8_all.ipk
+opkg install --force-reinstall /tmp/python-iso3166_0.8_all.ipk
+opkg --force-overwrite install /tmp/python-iso639_0.4.5_all.ipk
+opkg install --force-reinstall /tmp/python-iso639_0.4.5_all.ipk
+opkg --force-overwrite install /tmp/python-websocket_0.44.0_all.ipk
+opkg install --force-reinstall /tmp/python-websocket_0.44.0_all.ipk
+opkg --force-overwrite install /tmp/python-streamlink_0.10.0.r0_mod_all.ipk
+opkg install --force-reinstall /tmp/python-streamlink_0.10.0.r0_mod_all.ipk
+opkg --force-overwrite install /tmp/python-singledispatch_3.4.0.3-r0_mips32el.ipk
+opkg install --force-reinstall /tmp/python-singledispatch_3.4.0.3-r0_mips32el.ipk
+opkg update
+echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
+echo  'https://www.youtube.com/c/ReMyTr'
+sleep 2
+reboot

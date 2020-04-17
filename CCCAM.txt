@@ -1,0 +1,39 @@
+********************
+***CCam.conf_ReMy***
+********************
+SERVER LISTEN PORT : 12000
+ALLOW TELNETINFO: yes
+ALLOW WEBINFO: yes
+WEBINFO USERNAME : root
+TELNETINFO USERNAME : root
+TELNETINFO LISTEN PORT : 16000
+WEBINFO LISTEN PORT : 16001
+ZAP OSD TIME :0
+OSD USERNAME :root
+OSD PORT :80
+SHOW TIMING : yes
+DEBUG : yes
+NEWCAMD CONF :yes
+DISABLE EMM : yes
+EXTRA EMM LEVEL : yes
+MINI OSD : yes
+# CAM KEY #
+# CAMDATA #
+# BOX KEY: 
+# BEEF ID : #
+# PINCODE : #
+# SOFTKEY FILE : #
+SOFTKEY FILE : /etc/tuxbox/config/SoftCam.Key
+# AUTOROLL FILE : #
+AUTOROLL FILE : /var/keys/AutoRoll.Key
+# STATIC CW FILE : #
+STATIC CW FILE : /var/keys/constant.cw
+# CAID PRIO FILE : #
+CAID PRIO FILE : /var/etc/CCcam.prio
+# LOG WARNINGS : #
+LOG WARNINGS : yes
+# #
+# LOADBALANCE : #
+# TRY ALL CHIDS : #
+
+
