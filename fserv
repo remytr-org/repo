@@ -27,7 +27,7 @@ rm -f $FreeServer2 > /dev/null 2>&1
 rm -f $FreeServertmpa* > /dev/null 2>&1
 rm -f $FreeServertmpb* > /dev/null 2>&1
 #HOST             
-HTTPSERV1="https://raw.githubusercontent.com/PrivateTr/repo/master/CCCAM.txt"  
+HTTPSERV1="https://raw.githubusercontent.com/remytr-org/repo/master/CCCAM.txt"  
 HTTPSERV24="http://ia601509.us.archive.org/5/items/dreamosat/free-server1.txt"
 HTTPSERV25="http://ia601509.us.archive.org/5/items/dreamosat/free-server2.txt"   
 HTTPSERV26="http://ia601509.us.archive.org/5/items/dreamosat/free-server3.txt"  
@@ -650,7 +650,7 @@ SERVER=oscam.options
 #function convert_servers 
 OUTPUT="/etc/tuxbox/config/oscam.server"
 OUTPUT2=/etc/tuxbox/config/oscam.server
-HTTPSERV="https://raw.githubusercontent.com/PrivateTr/repo/master/oscam.server"         
+HTTPSERV="https://raw.githubusercontent.com/remytr-org/repo/master/oscam.server"         
 $WGET -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
 cat oscam.server > $OUTPUT
@@ -693,7 +693,7 @@ SERVER=ncam.options
 #function convert_servers 
 OUTPUT="/etc/tuxbox/config/ncam.server"
 OUTPUT2=/etc/tuxbox/config/ncam.server
-HTTPSERV="https://raw.githubusercontent.com/PrivateTr/repo/master/oscam.server"         
+HTTPSERV="https://raw.githubusercontent.com/remytr-org/repo/master/oscam.server"         
 $WGET -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
 cat ncam.server > $OUTPUT

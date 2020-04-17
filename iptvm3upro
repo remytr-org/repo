@@ -6,13 +6,13 @@ rm -rf /etc/enigma2/*.tv_org
 rm -rf /etc/enigma2/*.tv_bak
 sleep 1
 
-wget -O /tmp/DMRWOLFIEINC_UK.m3u "https://github.com/DMRWOLFIEINC/iptv/blob/master/iptv3"
+wget -O /tmp/DMRWOLFIEINC_UK.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv3"
 
 wget -O /tmp/DMRWOLFIEINC_USA.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv2"
 
-wget -O /tmp/ReMy_XxX.m3u "https://github.com/PrivateTr/git_git/raw/master/remy_xxx.m3u"
+wget -O /tmp/ReMy_XxX.m3u "https://github.com/remytr-org/git_git/raw/master/remy_xxx.m3u"
 
-wget -O /tmp/ReMy_Premium.m3u "https://github.com/PrivateTr/git_git/raw/master/remy_premium.m3u"
+wget -O /tmp/ReMy_Premium.m3u "https://github.com/remytr-org/git_git/raw/master/remy_premium.m3u"
 
 wget -O /tmp/ARAP_FILM.m3u "http://62.210.139.197:25461/get.php?username=test&password=test&type=m3u"
 

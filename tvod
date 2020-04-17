@@ -1,6 +1,6 @@
 #!/bin/sh
 opkg remove enigma2-plugin-extensions--turkvod
-curl https://github.com/PrivateTr/git_git/raw/master/enigma2-plugin-extensions-turkvod_10.76_all.ipk -Lko /tmp/enigma2-plugin-extensions-turkvod_10.76_all.ipk > /dev/null
+curl https://github.com/remytr-org/git_git/raw/master/enigma2-plugin-extensions-turkvod_10.76_all.ipk -Lko /tmp/enigma2-plugin-extensions-turkvod_10.76_all.ipk > /dev/null
 opkg --force-overwrite install /tmp/enigma2-plugin-extensions-turkvod_10.76_all.ipk
 opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-extensions-turkvod_10.76_all.ipk
 echo ""
