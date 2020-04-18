@@ -47,6 +47,11 @@ wget -O /tmp/rmcsport5.m3u "http://iptv7.premium-stv.com:25461/get.php?username=
 wget -O /tmp/rmcsport3.m3u "http://iptv7.premium-stv.com:25461/get.php?username=rmcsport3&password=1557539943&type=m3u"
 
 wget -O /tmp/gnsportfrshtf1.m3u "http://iptv7.premium-stv.com:25461/get.php?username=gnsportfrshtf1&password=fqzo522Da264&type=m3u"
+
+wget -O /tmp/worldiptv.m3u "http://worldiptv.me:8080/get.php?username=SghubRes-2&password=G55zEE7a8A&type=m3u"
+
+wget -O /tmp/nitro_ltd.m3u "http://nitro.ltd:25461/get.php?username=StevenD2020&password=StevFr2019&type=m3u"
+
 sleep 1
 rm -rf /tmp/iptvm3upro
 exit 0
