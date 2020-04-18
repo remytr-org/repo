@@ -1,4 +1,5 @@
 #!/bin/sh
+opkg remove enigma2-plugin-softcams-remy-openatv-softcampanel
 opkg update
 wget -O - -q http://updates.mynonpublic.com/oea/feed | bash >/dev/null 2>&1
 sleep 1
