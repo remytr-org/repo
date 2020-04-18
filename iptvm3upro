@@ -52,6 +52,8 @@ wget -O /tmp/worldiptv.m3u "http://worldiptv.me:8080/get.php?username=SghubRes-2
 
 wget -O /tmp/nitro_ltd.m3u "http://nitro.ltd:25461/get.php?username=StevenD2020&password=StevFr2019&type=m3u"
 
+wget -O /tmp/VIP_IPTV.m3u "http://104.218.60.145:83/get.php?username=Elonge&password=4049153347@&type=m3u"
+
 sleep 1
 rm -rf /tmp/iptvm3upro
 exit 0
