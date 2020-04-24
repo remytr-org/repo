@@ -38,6 +38,18 @@ wget -O /tmp/GoCast-Europa-Kremlin.m3u "https://github.com/exodiver/IPTV/raw/mas
 
 wget -O /tmp/GoCast-Europa-Buckingham.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Europa/Buckingham.m3u8"
 
+wget -O /tmp/iptvpro2.m3u "http://iptvpro.vision-new.org:8789/get.php?username=IPTVPRO22VODS22&password=W2T29z9cBP&type=m3u"
+
+wget -O /tmp/iptvpro.m3u "http://iptvpro.vision-new.org:8789/get.php?username=IPTVPRO22VODS22PRO2&password=W2T29z9cBPPRO2&type=m3u"
+
+wget -O /tmp/rmcsport5.m3u "http://iptv7.premium-stv.com:25461/get.php?username=rmcsport5&password=2350888447&type=m3u"
+
+wget -O /tmp/rmcsport3.m3u "http://iptv7.premium-stv.com:25461/get.php?username=rmcsport3&password=1557539943&type=m3u"
+
+wget -O /tmp/gnsportfrshtf1.m3u "http://iptv7.premium-stv.com:25461/get.php?username=gnsportfrshtf1&password=fqzo522Da264&type=m3u"
+
+wget -O /tmp/VIP_IPTV.m3u "http://104.218.60.145:83/get.php?username=Elonge&password=4049153347@&type=m3u"
+
 sleep 1
 rm -rf /tmp/iptvm3upro
 exit 0
