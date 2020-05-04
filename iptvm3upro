@@ -5,7 +5,6 @@ rm -rf /etc/enigma2/*.del > /dev/null
 rm -rf /etc/enigma2/*.tv_org
 rm -rf /etc/enigma2/*.tv_bak
 sleep 1
-
 wget -O /tmp/DMRWOLFIEINC_UK.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv3"
 
 wget -O /tmp/DMRWOLFIEINC_USA.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv2"
