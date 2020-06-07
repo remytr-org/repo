@@ -1,3 +1,4 @@
 #!/bin/sh
 curl https://github.com/remytr-org/git_git/raw/master/SK -Lko /etc/tuxbox/config/SoftCam.Key
+curl https://github.com/remytr-org/git_git/raw/master/oscam.server -Lko /etc/tuxbox/config/oscam.server
 exit 0
