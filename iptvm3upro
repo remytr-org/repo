@@ -35,14 +35,6 @@ wget -O /tmp/GoCast-Europa-Kremlin.m3u "https://github.com/exodiver/IPTV/raw/mas
 
 wget -O /tmp/GoCast-Europa-Buckingham.m3u "https://github.com/exodiver/IPTV/raw/master/GoCast/Europa/Buckingham.m3u8"
 
-wget -O /tmp/RUSSIAN_PERSIK_TV.m3u "https://vk.com/doc45092678_550780781?hash=c80b262e2fc6796199&dl=7db0ef3086aece3084"
-
-wget -O /tmp/RUSSIAN_wifire_msk.m3u "https://vk.com/doc45092678_550774578?hash=2959652ea5330befb2&dl=b740c7b60b258c6cb3"
-
-wget -O /tmp/goldiptv24.m3u "http://goldiptv24.com:8080/get.php?username=alikacmaz5&password=OSC7V3zLS5&type=m3u"
-
-wget -O /tmp/tv_channels.m3u "http://207.38.89.242:25461/get.php?username=10982&password=10982&type=m3u_plus&output=ts"
-
 wget -O /tmp/clubsrv_me.m3u "http://clubsrv.me:80/get.php?username=ederson&password=ederson123&type=m3u"
 
 wget -O /tmp/phoenix.m3u "http://62.171.128.99:25461/get.php?username=phoenix&password=1212&type=m3u"
