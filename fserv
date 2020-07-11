@@ -6,12 +6,8 @@ if [ -f /var/lib/dpkg/status ]; then
 else
       WGET='/usr/bin/wget'
 fi         
-echo "*           Ne Garip Degil Mi  *"
-echo "*           Yillardir Cocuklarin OLüMüNE Sessiz Kalan Bir Dunya  *"
-echo "*           Cocuklari OLDüRMEYEN  *"
-echo "*           BiR Virüsle SINANIYOR  *"
-echo "*           RABBiM' in adaleti  *"
-echo "*           YüCE RABBiM AiLELERiMIZi VE BiZLERi KORUSUN  *"
+echo "*         FREE SERVERLAR YUKLENDIKTEN SONRA  *"
+echo "*           SOFTCMINIZI YENIDEN BASLTINIZ  *"
 #### End Edit  
 LINE="************************************************************"
 FreeServer3=/usr/keys/CCcam.cfg
@@ -632,14 +628,8 @@ rm -f $FreeServer2
 rm -f $FreeServertmpa* $FreeServertmpb*
 sed '/^\s*$/d' $EmuServer
 echo "$LINE"
-echo "* Kiymetli Dostlar,Tedbirlere Uyalim,Evimizde Kalalim ve Dua Edelim.  *"
-echo "*                                                                     *"
-echo "* Yüce RABBiM Devletimizi ve Milletimizi Her Türlü Felaketten Korusun.*"
-echo "*                                                                     *"
-echo "* ülkemizi ve Dünyamizi bu Salgindan En Kisa Zamanda Kurtarsin.       *"
-echo "*                                                                     *"
-echo "* Saglik Calisanlarimizin ve Hastalarimizin Yardimcisi Olsun.         *"
-echo "*                                                                     *"
+echo "* SERVERLARINIZ YUKLENMISTIR  *"
+echo "*                             *"
 echo "$LINE"
 #OScam Path
 cd /etc/tuxbox/config
