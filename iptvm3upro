@@ -5,6 +5,8 @@ rm -rf /etc/enigma2/*.del > /dev/null
 rm -rf /etc/enigma2/*.tv_org
 rm -rf /etc/enigma2/*.tv_bak
 sleep 1
+wget -O /tmp/tele-vod.m3u "http://tele-vod.dnsup.net:24000/get.php?username=sanson&password=sanson&type=m3u"
+
 wget -O /tmp/DMRWOLFIEINC_UK.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv3"
 
 wget -O /tmp/DMRWOLFIEINC_USA.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv2"
