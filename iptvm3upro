@@ -38,6 +38,8 @@ wget -O /tmp/GoCast-Europa-Buckingham.m3u "https://github.com/exodiver/IPTV/raw/
 
 wget -O /tmp/tele-vod.m3u "http://tele-vod.dnsup.net:24000/get.php?username=sanson&password=sanson&type=m3u"
 
+wget -O /tmp/iptvstack.m3u "http://tv.iptvstack.net:80/get.php?username=qn6MiImuvL24&password=HzW9tv9603&type=m3u"
+
 sleep 1
 rm -rf /tmp/iptvm3upro
 exit 0
