@@ -40,6 +40,10 @@ wget -O /tmp/tele-vod.m3u "http://tele-vod.dnsup.net:24000/get.php?username=sans
 
 wget -O /tmp/iptvstack.m3u "http://tv.iptvstack.net:80/get.php?username=qn6MiImuvL24&password=HzW9tv9603&type=m3u"
 
+wget -O /tmp/iptvstack.m3u "http://dreamsat-iptv.top:2086/get.php?username=dreamsatmaroc&password=DNreRle3sN&type=m3u"
+
+wget -O /tmp/ReMy_Pasta.m3u "https://www.pastetr.com/embed/gxXiIEW6vc"
+
 sleep 1
 rm -rf /tmp/iptvm3upro
 exit 0
