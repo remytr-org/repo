@@ -50,10 +50,7 @@ wget -O /tmp/PORTAKIZCE_FILMLER.m3u "http://forceie.com:2082/get.php?username=so
 
 wget -O /tmp/INGILIZCE_FILM_BUYUK_DOSYA.m3u "http://mytv.fun:8080/get.php?username=f7aivfl1o48835tt8hkuo9a4i&password=rj2ki0szm&type=m3u_plus&output=ts"
 
-wget -O /tmp/INGILIZCE_FILM_BUYUK_DOSYA.m3u "http://mytv.fun:8080/get.php?username=iqhrsbyhea&password=ysu6ax1k2f&type=m3u_plus&output=ts"
- http://mytv.fun:8080
-Username: 1bsun4tu2p
-Password: bh1p760sck
+
 sleep 1
 rm -rf /tmp/iptvm3upro
 exit 0
