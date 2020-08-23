@@ -14,33 +14,35 @@ wget -O /tmp/ReMy_XxX.m3u "https://github.com/remytr-org/git_git/raw/master/remy
 
 wget -O /tmp/ReMy_Premium.m3u "https://github.com/remytr-org/git_git/raw/master/remy_premium.m3u"
 
-wget -O /tmp/GoCast2-Oriental-Yangtze.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/Oriental/Yangtze.m3u8"
+wget -O /tmp/GoCast2-Oriental-Mekong.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Oriental/Mekong.m3u8"
 
-wget -O /tmp/GoCast-Oriental-Mekong.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/A.m3u8"
+wget -O /tmp/GoCast-Oriental-Euphrates.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Oriental/Euphrates%E2%80%8E.m3u8"
 
-wget -O /tmp/GoCast-Oriental-Euphrates.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/Oriental/Euphrates%E2%80%8E.m3u8"
+wget -O /tmp/GoCast-NewWorld-Missouri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/New%20World/Missouri.m3u8"
 
-wget -O /tmp/GoCast-NewWorld-Missouri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/New%20World/Missouri.m3u8"
+wget -O /tmp/GoCast-NewWorld-Amazon.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/New%20World/Amazon.m3u8"
 
-wget -O /tmp/GoCast-NewWorld-Amazon.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/New%20World/Amazon.m3u8"
+wget -O /tmp/GoCast-Hindustan-Kaveri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Hindustan/Kaveri.m3u8"
 
-wget -O /tmp/GoCast-Hindustan-Kaveri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/Hindustan/Kaveri.m3u8"
+wget -O /tmp/GoCast-Hindustan-Indus.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Hindustan/Indus.m3u8"
 
-wget -O /tmp/GoCast-Hindustan-Indus.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/Hindustan/Indus.m3u8"
+wget -O /tmp/GoCast-Hindustan-Ganges.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Hindustan/Ganges.m3u8"
 
-wget -O /tmp/GoCast-Hindustan-Ganges.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/Hindustan/Ganges.m3u8"
+wget -O /tmp/GoCast-Europa-Volga.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Europa/Volga.m3u8"
 
-wget -O /tmp/GoCast-Europa-Volga.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/Europa/Volga.m3u8"
+wget -O /tmp/GoCast-Europa-Thames.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Europa/Thames.m3u8"
 
-wget -O /tmp/GoCast-Europa-Thames.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/Europa/Thames.m3u8"
+wget -O /tmp/GoCast-Europa-Seine.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Europa/Seine.m3u8"
 
-wget -O /tmp/GoCast-Europa-Seine.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Development/Europa/Seine.m3u8"
+wget -O /tmp/GoCast2-Prototype-A.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/A.m3u8"
 
-wget -O /tmp/GoCast2-Prototype-A.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Prototype/A.m3u8"
+wget -O /tmp/GoCast2-Prototype-Gugong.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/Gugong.m3u8"
 
-wget -O /tmp/GoCast2-Prototype-Gugong.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Prototype/Gugong.m3u8"
+wget -O /tmp/GoCast2-Prototype-Istana.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/Istana.m3u8"
 
-wget -O /tmp/GoCast2-Prototype-Istana.m3u "https://raw.githubusercontent.com/exodiver/IPTV/raw/master/Prototype/Istana.m3u8"
+wget -O /tmp/GoCast-Zhongguo-Difang.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Zhongguo/Difang.m3u8"
+
+wget -O /tmp/GoCast-Zhongguo-Yangtze.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Zhongguo/Yangtze.m3u8"
 
 wget -O /tmp/ALMANCA_FILMLER.m3u "http://iptv-line.com:7899/get.php?username=caribbeanroots25-restream&password=DCPMNO4o&type=m3u"
 
