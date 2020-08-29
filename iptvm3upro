@@ -6,49 +6,39 @@ rm -rf /etc/enigma2/*.tv_org
 rm -rf /etc/enigma2/*.tv_bak
 sleep 1
 
-wget -O /tmp/DMRWOLFIEINC_UK.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv3"
-
-wget -O /tmp/DMRWOLFIEINC_USA.m3u "https://github.com/DMRWOLFIEINC/iptv/raw/master/iptv2"
-
 wget -O /tmp/ReMy_XxX.m3u "https://github.com/remytr-org/git_git/raw/master/remy_xxx.m3u"
 
 wget -O /tmp/ReMy_Premium.m3u "https://github.com/remytr-org/git_git/raw/master/remy_premium.m3u"
 
-wget -O /tmp/GoCast2-Oriental-Mekong.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Oriental/Mekong.m3u8"
+wget -O /tmp/Oriental-Mekong.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Oriental/Mekong.m3u8"
 
-wget -O /tmp/GoCast-Oriental-Euphrates.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Oriental/Euphrates%E2%80%8E.m3u8"
+wget -O /tmp/Oriental-Euphrates.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Oriental/Euphrates%E2%80%8E.m3u8"
 
-wget -O /tmp/GoCast-NewWorld-Missouri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/New%20World/Missouri.m3u8"
+wget -O /tmp/NewWorld-Missouri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/New%20World/Missouri.m3u8"
 
-wget -O /tmp/GoCast-NewWorld-Amazon.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/New%20World/Amazon.m3u8"
+wget -O /tmp/NewWorld-Amazon.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/New%20World/Amazon.m3u8"
 
-wget -O /tmp/GoCast-Hindustan-Kaveri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Hindustan/Kaveri.m3u8"
+wget -O /tmp/Hindustan-Kaveri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/Kaveri.m3u8"
 
-wget -O /tmp/GoCast-Hindustan-Indus.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Hindustan/Indus.m3u8"
+wget -O /tmp/Hindustan-Indus.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/Indus.m3u8"
 
-wget -O /tmp/GoCast-Hindustan-Ganges.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Hindustan/Ganges.m3u8"
+wget -O /tmp/Hindustan-Ganges.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/Ganges.m3u8"
 
-wget -O /tmp/GoCast-Europa-Volga.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Europa/Volga.m3u8"
+wget -O /tmp/Europa-Volga.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Europa/Volga.m3u8"
 
-wget -O /tmp/GoCast-Europa-Thames.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Europa/Thames.m3u8"
+wget -O /tmp/Europa-Thames.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Europa/Thames.m3u8"
 
-wget -O /tmp/GoCast-Europa-Seine.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Europa/Seine.m3u8"
+wget -O /tmp/Europa-Seine.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Europa/Seine.m3u8"
 
-wget -O /tmp/GoCast2-Prototype-A.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/A.m3u8"
+wget -O /tmp/Zhongguo-Difang.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Zhongguo/Difang.m3u8"
 
-wget -O /tmp/GoCast2-Prototype-Gugong.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/Gugong.m3u8"
+wget -O /tmp/Zhongguo-Yangtze.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Zhongguo/Yangtze.m3u8"
 
-wget -O /tmp/GoCast2-Prototype-Istana.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/Istana.m3u8"
+wget -O /tmp/Prototype-A.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/A.m3u8"
 
-wget -O /tmp/GoCast-Zhongguo-Difang.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Zhongguo/Difang.m3u8"
+wget -O /tmp/Prototype-Gugong.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/Gugong.m3u8"
 
-wget -O /tmp/GoCast-Zhongguo-Yangtze.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Repo/Zhongguo/Yangtze.m3u8"
-
-wget -O /tmp/ALMANCA_FILMLER.m3u "http://iptv-line.com:7899/get.php?username=caribbeanroots25-restream&password=DCPMNO4o&type=m3u"
-
-wget -O /tmp/PORTAKIZCE_FILMLER.m3u "http://forceie.com:2082/get.php?username=sony123&password=sony123&type=m3u"
-
-wget -O /tmp/INGILIZCE_FILM_BUYUK_DOSYA.m3u "http://mytv.fun:8080/get.php?username=f7aivfl1o48835tt8hkuo9a4i&password=rj2ki0szm&type=m3u_plus&output=ts"
+wget -O /tmp/Prototype-Istana.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/Istana.m3u8"
 
 
 sleep 1
