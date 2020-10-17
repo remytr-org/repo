@@ -18,11 +18,11 @@ wget -O /tmp/NewWorld-Missouri.m3u "https://raw.githubusercontent.com/exodiver/I
 
 wget -O /tmp/NewWorld-Amazon.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/New%20World/Amazon.m3u8"
 
-wget -O /tmp/Hindustan-Kaveri.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/Kaveri.m3u8"
+wget -O /tmp/Hindustan-East.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/East.m3u8"
 
-wget -O /tmp/Hindustan-Indus.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/Indus.m3u8"
+wget -O /tmp/Hindustan-South.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/South.m3u8"
 
-wget -O /tmp/Hindustan-Ganges.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/Ganges.m3u8"
+wget -O /tmp/Hindustan-West.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Hindustan/West.m3u8"
 
 wget -O /tmp/Europa-Volga.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Europa/Volga.m3u8"
 
@@ -33,6 +33,8 @@ wget -O /tmp/Europa-Seine.m3u "https://raw.githubusercontent.com/exodiver/IPTV/m
 wget -O /tmp/Zhongguo-Difang.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Zhongguo/Difang.m3u8"
 
 wget -O /tmp/Zhongguo-Yangtze.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/Zhongguo/Yangtze.m3u8"
+
+wget -O /tmp/ARK_DRM.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Ark/DRM.m3u8"
 
 wget -O /tmp/Prototype-A.m3u "https://raw.githubusercontent.com/exodiver/IPTV/master/Prototype/A.m3u8"
 
