@@ -21,7 +21,7 @@ rm -rf /etc/tuxbox/config/ncam  >/dev/null 2>&1
 rm -rf /etc/init.d/softcam.ncam  >/dev/null 2>&1
 rm -rf /etc/init.d/softcam.oscam-emu  >/dev/null 2>&1
 rm -rf /etc/init.d/softcam.CCcam  >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/SK -Lko /etc/tuxbox/config/SoftCam.Key
+curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/SoftCam.Key
 /usr/bin/oscam -b -c /etc/tuxbox/config
 echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
 echo  'https://www.youtube.com/c/ReMyTr'
