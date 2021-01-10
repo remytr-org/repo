@@ -1,0 +1,15 @@
+#!/bin/sh
+opkg remove enigma2-plugin-softcams-remy-openatv-softcampanel
+opkg update
+wget -O - -q http://updates.mynonpublic.com/oea/feed | bash >/dev/null 2>&1
+sleep 1
+opkg update
+sleep 1
+opkg install enigma2-plugin-softcams-oscam-emu-ipv4only
+opkg install enigma2-plugin-softcams-ncam-ipv4only
+opkg install enigma2-plugin-softcams-cccam
+curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/SoftCam.Key >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/oscam-emu/SoftCam.Key
+curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/ncam/SoftCam.Key
+/usr/bin/oscam -b -c /etc/tuxbox/config
+killall -9 enigma2
