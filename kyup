@@ -1,3 +1,5 @@
 #!/bin/sh
 curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/SoftCam.Key
+curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/oscam-emu/SoftCam.Key
+curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/ncam/SoftCam.Key
 exit 0
