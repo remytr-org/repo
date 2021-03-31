@@ -7,9 +7,9 @@ rm -rf /etc/enigma2/*.tv_org
 rm -rf /etc/enigma2/*.tv_bak
 sleep 1
 
-curl -Lko /tmp/ReMy_XxX.m3u "https://github.com/remytr-org/git_git/raw/master/remy_xxx.m3u"
+curl -Lko /tmp/ReMy_XxX.m3u "https://raw.githubusercontent.com/remytr-org/git_git/master/remy_xxx.m3u"
 
-curl -Lko /tmp/ReMy_Premium.m3u "https://github.com/remytr-org/git_git/raw/master/remy_premium.m3u"
+curl -Lko /tmp/ReMy_Premium.m3u "https://raw.githubusercontent.com/remytr-org/git_git/master/remy_premium.m3u"
 
 curl -Lko /tmp/TURKEY.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/tr.m3u"
 
