@@ -1,4 +1,5 @@
 #!/bin/sh
+cd /tmp
 rm -rf /tmp/*.m3u
 rm -rf /tmp//usr/lib/enigma2/python/Plugins/Extensions/m3u_Pro/m3u_ProM3U/*.m3u
 rm -rf /etc/enigma2/*.del > /dev/null
