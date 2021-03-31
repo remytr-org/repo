@@ -9,6 +9,10 @@ sleep 1
 
 curl -Lko /tmp/ReMy_XxX.m3u "https://raw.githubusercontent.com/remytr-org/git_git/master/remy_xxx.m3u"
 
+curl -Lko /tmp/XX-PORN-fr.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/fr.m3u"
+
+curl -Lko /tmp/XXX-PORN-ASTV.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/cy.m3u"
+
 curl -Lko /tmp/ReMy_Premium.m3u "https://raw.githubusercontent.com/remytr-org/git_git/master/remy_premium.m3u"
 
 curl -Lko /tmp/TURKEY.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/tr.m3u"
@@ -19,13 +23,9 @@ curl -Lko /tmp/CHINESS.m3u "https://raw.githubusercontent.com/iptv-org/iptv/mast
 
 curl -Lko /tmp/GERMAN.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/de.m3u"
 
-curl -Lko /tmp/FRENCH.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/fr.m3u"
-
 curl -Lko /tmp/GREEK.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/gr.m3u"
 
 curl -Lko /tmp/INDIAN.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/in.m3u"
-
-curl -Lko /tmp/XX-PORN-fr.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/fr.m3u"
 
 curl -Lko /tmp/IRANIAN.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/ir.m3u"
 
