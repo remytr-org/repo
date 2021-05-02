@@ -8,6 +8,8 @@ sleep 1
 opkg install enigma2-plugin-softcams-oscam-emu-ipv4only
 opkg install enigma2-plugin-softcams-ncam-ipv4only
 opkg install enigma2-plugin-softcams-cccam
+curl https://github.com/remytr-org/git_git/raw/master/oscam.conf -Lko /etc/tuxbox/config/oscam-emu/oscam.conf >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam/ncam.conf >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/SoftCam.Key >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/oscam-emu/SoftCam.Key
 curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/ncam/SoftCam.Key
