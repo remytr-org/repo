@@ -1,5 +1,0 @@
-#!/bin/sh
-echo "    *** TURKVODA GIRINCE SARI TUSA BASINIZ ***"
-sleep 2
-curl https://github.com/remytr-org/repo/raw/master/tvod3 -Lko /tmp/tvod3 && chmod 0755 /tmp/tvod3 && /tmp/tvod3 && rm -f /tmp/tvod3 > /dev/null 2>&1
-killall -9 enigma2
