@@ -1,0 +1,36 @@
+#!/bin/sh
+#ReMy Edit#
+
+if [ -f /var/lib/dpkg/status ]; then
+      WGET='/usr/bin/wget2 --no-check-certificate'
+else
+      WGET='/usr/bin/wget'
+fi
+
+/etc/init.d/openvpn stop > /dev/null 2>&1
+rm -r -f /etc/openvpn; mkdir /etc/openvpn
+$WGET -q -O- --trust-server-names "https://ia600702.us.archive.org/26/items/dreamosat/cfg.conf" --no-check-certificate > /etc/openvpn/cfg.conf 
+DTMP=`mktemp -d`
+CLT='/etc/openvpn/client.conf'
+cd $DTMP
+vph="https://www.vpnbook.com/free-openvpn-account/VPNBook.com-OpenVPN-CA222.zip"
+$WGET -q -O 'vpn.zip' $vph
+unzip -q -o vpn.zip 
+OVPN=`find . -maxdepth 1 -name "*udp25000*" -print`
+echo $OVPN
+mv $OVPN client.conf
+sed -i 's/auth-user-pass/auth-user-pass cfg.conf/g' client.conf
+cp -f client.conf $CLT
+echo "Current IP: `$WGET -qO- http://ipecho.net/plain;echo`"
+opkg install openvpn > /dev/null 2>&1
+/etc/init.d/openvpn stop > /dev/null 2>&1
+/etc/init.d/openvpn start > /dev/null 2>&1
+sleep 3
+echo "New IP    : `$WGET -qO- http://ipecho.net/plain;echo`"
+rm -r -f $DTMP
+echo "CIHAZ YENIDEN BASLATILATILDIGINDA OPENVPN BASLATILACAKTIR"
+sleep 3
+echo "OPENVPN ILE ISINIZ BITINCE OPENVPN OTO BASLANGICI KAPATINIZ"
+sleep 3
+exit 0
+reboot
