@@ -1,4 +1,8 @@
 #!/bin/bash
+#By @mino60 RAED 2021
+#### EDit By RAED To DreamOS OE2.5/2.6
+WGET='wget --no-check-certificate'
+#### END EDit
 
 cd /tmp       
 FreeServer3=/usr/keys/CCcam.cfg
@@ -17,7 +21,7 @@ rm -f $FreeServertmpb* > /dev/null 2>&1
 rm -f $FreeServertmpe* > /dev/null 2>&1
 rm -f $FreeServertmpf* > /dev/null 2>&1
 #HOST   
-HTTPSERV1="https://raw.githubusercontent.com/remytr-org/repo/master/CCCAM.txt"                                       
+HTTPSERV1="https://ia600702.us.archive.org/26/items/dreamosat/CCCAM.txt"                                       
 HTTPSERV2="https://cccamas.com/free/get.php"
 HTTPSERV3="https://cccamprime.com/cccam48h.php" 
 #HTTPSERV4="https://www.freecamtv.com/try1.php"  
@@ -800,7 +804,12 @@ rm -rf $FreeServer2
 rm -rf $FreeServertmpa* $FreeServertmpb*
 rm -rf $FreeServertmpe* $FreeServertmpf*
 sed '/^\s*$/d' $EmuServer
-
+echo "$LINE"
+echo "*                        Finished                          *"
+echo "*                   mino60 - RAED - Fairbird               *"
+echo "*   You can find Servers lines in (/etc/CCcam.cfg)         *"
+echo "$LINE" 
+#OScam Path
 cd /etc/tuxbox/config/oscam-emu
 OUTPUT=/etc/tuxbox/config/oscam-emu/oscam.server
 OUTPUT2=/etc/tuxbox/config/oscam-emu/oscam.server
@@ -809,7 +818,7 @@ SERVER=oscam.options
 #function convert_servers 
 OUTPUT="/etc/tuxbox/config/oscam-emu/oscam.server"
 OUTPUT2=/etc/tuxbox/config/oscam-emu/oscam.server
-HTTPSERV="https://raw.githubusercontent.com/remytr-org/repo/master/oscam.server"         
+HTTPSERV="http://ia601509.us.archive.org/5/items/dreamosat/server.txt"         
 $WGET -T 5 -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
 cat oscam.server > $OUTPUT
@@ -851,7 +860,7 @@ SERVER=ncam.options
 #function convert_servers 
 OUTPUT="/etc/tuxbox/config/ncam-emu/ncam.server"
 OUTPUT2=/etc/tuxbox/config/ncam-emu/ncam.server
-HTTPSERV="https://raw.githubusercontent.com/remytr-org/repo/master/oscam.server"         
+HTTPSERV="http://ia601509.us.archive.org/5/items/dreamosat/server.txt"         
 $WGET -T 5 -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
 cat ncam.server > $OUTPUT
@@ -893,7 +902,7 @@ SERVER=gcam.options
 #function convert_servers 
 OUTPUT="/etc/tuxbox/config/gcam.server"
 OUTPUT2=/etc/tuxbox/config/gcam.server
-HTTPSERV="https://raw.githubusercontent.com/remytr-org/repo/master/oscam.server"         
+HTTPSERV="http://ia601509.us.archive.org/5/items/dreamosat/server.txt"         
 $WGET -T 5 -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
 cat gcam.server > $OUTPUT
