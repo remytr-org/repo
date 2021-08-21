@@ -20,6 +20,10 @@ rm -rf /tmp/iptv
 rm -rf /etc/enigma2/*.del > /dev/null
 rm -rf /etc/enigma2/*.tv_org
 rm -rf /etc/enigma2/*.tv_bak
+WGET="wget --no-check-certificate"
+
+$WGET https://ia601406.us.archive.org/25/items/iptvworld-24/IPTVWORLDVIP.sh -qO - | /bin/sh&
+sleep 2;
 echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
 echo  'https://www.youtube.com/c/ReMyTr'
 exit 0
