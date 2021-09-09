@@ -853,13 +853,13 @@ rm conv.tmp
 echo ""
 #NCam Path
 cd /etc/tuxbox/config
-OUTPUT=/etc/tuxbox/config/ncam-emu/ncam.server
-OUTPUT2=/etc/tuxbox/config/ncam-emu/ncam.server
+OUTPUT=/etc/tuxbox/config/ncam/ncam.server
+OUTPUT2=/etc/tuxbox/config/ncam/ncam.server
 SERVER=/tmp/ncam.options
 SERVER=ncam.options
 #function convert_servers 
-OUTPUT="/etc/tuxbox/config/ncam-emu/ncam.server"
-OUTPUT2=/etc/tuxbox/config/ncam-emu/ncam.server
+OUTPUT="/etc/tuxbox/config/ncam/ncam.server"
+OUTPUT2=/etc/tuxbox/config/ncam/ncam.server
 HTTPSERV="http://ia601509.us.archive.org/5/items/dreamosat/server.txt"         
 $WGET -T 5 -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
