@@ -11,7 +11,7 @@ curl -Lko /tmp/ReMy_XxX.m3u "https://raw.githubusercontent.com/remytr-org/git_gi
 
 curl -Lko /tmp/XX-PORN-fr.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/fr.m3u"
 
-curl -Lko /tmp/XXX-PORN-ASTV.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/cy.m3u"
+curl -Lko /tmp/KIBRIS_TV.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/channels/cy.m3u"
 
 curl -Lko /tmp/ReMy_Premium.m3u "https://raw.githubusercontent.com/remytr-org/git_git/master/remy_premium.m3u"
 
