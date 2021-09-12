@@ -818,7 +818,7 @@ SERVER=oscam.options
 #function convert_servers 
 OUTPUT="/etc/tuxbox/config/oscam-emu/oscam.server"
 OUTPUT2=/etc/tuxbox/config/oscam-emu/oscam.server
-HTTPSERV="http://ia601509.us.archive.org/5/items/dreamosat/server.txt"         
+HTTPSERV="https://raw.githubusercontent.com/remytr-org/git_git/master/server.txt"         
 $WGET -T 5 -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
 cat oscam.server > $OUTPUT
