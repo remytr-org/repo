@@ -20,10 +20,12 @@ curl https://github.com/remytr-org/git_git/raw/master/oscam.srvid2 -Lko /etc/tux
 curl https://github.com/remytr-org/git_git/raw/master/oscam.dvbapi -Lko /etc/tuxbox/config/oscam.dvbapi >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/oscam.server -Lko /etc/tuxbox/config/oscam.server >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/oscam.user -Lko /etc/tuxbox/config/oscam.user >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/oscam.ccache -Lko /etc/tuxbox/config/oscam.ccache >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam.conf >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/ncam.srvid2 -Lko /etc/tuxbox/config/ncam.srvid2 >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/ncam.user -Lko /etc/tuxbox/config/ncam.user >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/ncam.dvbapi -Lko /etc/tuxbox/config/ncam.dvbapi >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/ncam.server -Lko /etc/tuxbox/config/ncam.server >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/ncam.ccache -Lko /etc/tuxbox/config/ncam.ccache >/dev/null 2>&1
 /usr/bin/oscam -b -c /etc/tuxbox/config
 killall -9 enigma2
