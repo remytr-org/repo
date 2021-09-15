@@ -810,14 +810,14 @@ echo "*                   mino60 - RAED - Fairbird               *"
 echo "*   You can find Servers lines in (/etc/CCcam.cfg)         *"
 echo "$LINE" 
 #OScam Path
-cd /etc/tuxbox/config
-OUTPUT=/etc/tuxbox/config/oscam.server
-OUTPUT2=/etc/tuxbox/config/oscam.server
+cd /etc/tuxbox/config/oscam-emu
+OUTPUT=/etc/tuxbox/config/oscam-emu/oscam.server
+OUTPUT2=/etc/tuxbox/config/oscam-emu/oscam.server
 SERVER=/tmp/oscam.options
 SERVER=oscam.options
 #function convert_servers 
-OUTPUT="/etc/tuxbox/config/oscam.server"
-OUTPUT2=/etc/tuxbox/config/oscam.server
+OUTPUT="/etc/tuxbox/config/oscam-emu/oscam.server"
+OUTPUT2=/etc/tuxbox/config/oscam-emu/oscam.server
 HTTPSERV="https://raw.githubusercontent.com/remytr-org/git_git/master/server.txt"         
 $WGET -T 5 -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
@@ -852,14 +852,14 @@ done < conv.tmp
 rm conv.tmp
 echo ""
 #NCam Path
-cd /etc/tuxbox/config
-OUTPUT=/etc/tuxbox/config/ncam.server
-OUTPUT2=/etc/tuxbox/config/ncam.server
+cd /etc/tuxbox/config/ncam
+OUTPUT=/etc/tuxbox/config/ncam/ncam.server
+OUTPUT2=/etc/tuxbox/config/ncam/ncam.server
 SERVER=/tmp/ncam.options
 SERVER=ncam.options
 #function convert_servers 
-OUTPUT="/etc/tuxbox/config/ncam.server"
-OUTPUT2=/etc/tuxbox/config/ncam.server
+OUTPUT="/etc/tuxbox/config/ncam/ncam.server"
+OUTPUT2=/etc/tuxbox/config/ncam/ncam.server
 HTTPSERV="http://ia601509.us.archive.org/5/items/dreamosat/server.txt"         
 $WGET -T 5 -O $SERVER $HTTPSERV > /dev/null 2>&1 
 echo -n "Converting C lines"        
