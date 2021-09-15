@@ -8,16 +8,22 @@ sleep 1
 opkg install enigma2-plugin-softcams-oscam-emu-ipv4only
 opkg install enigma2-plugin-softcams-ncam-ipv4only
 opkg install enigma2-plugin-softcams-cccam
-curl https://github.com/remytr-org/git_git/raw/master/oscam.conf -Lko /etc/tuxbox/config/oscam-emu/oscam.conf >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/SoftCam.Key -Lko /etc/tuxbox/config/oscam-emu/SoftCam.Key >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/oscam.srvid2 -Lko /etc/tuxbox/config/oscam-emu/oscam.srvid2 >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/oscam.dvbapi -Lko /etc/tuxbox/config/oscam-emu/oscam.dvbapi >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/oscam.server -Lko /etc/tuxbox/config/oscam-emu/oscam.server >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/oscam.user -Lko /etc/tuxbox/config/oscam-emu/oscam.user >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam-emu/ncam.conf >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam-emu/ncam.srvid2 >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam-emu/ncam.user >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam-emu/ncam.dvbapi >/dev/null 2>&1
-curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam-emu/ncam.server >/dev/null 2>&1
-/usr/bin/oscam -b -c /etc/tuxbox/config/oscam-emu
+mv /usr/bin/oscam-emu /usr/bin/oscam
+rm -rf /etc/tuxbox/config/oscam-emu  >/dev/null 2>&1
+rm -rf /etc/tuxbox/config/ncam  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.ncam  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.oscam-emu  >/dev/null 2>&1
+rm -rf /etc/init.d/softcam.CCcam  >/dev/null 2>&1
+curl https://github.com/MOHAMED19OS/SoftCam_Emu/raw/main/Enigma2/SoftCam.Key -Lko /etc/tuxbox/config/SoftCam.Key >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/oscam.conf -Lko /etc/tuxbox/config/oscam.conf >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/oscam.srvid2 -Lko /etc/tuxbox/config/oscam.srvid2 >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/oscam.dvbapi -Lko /etc/tuxbox/config/oscam.dvbapi >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/oscam.server -Lko /etc/tuxbox/config/oscam.server >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/oscam.user -Lko /etc/tuxbox/config/oscam.user >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam.conf >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam.srvid2 >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam.user >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam.dvbapi >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/ncam.conf -Lko /etc/tuxbox/config/ncam.server >/dev/null 2>&1
+/usr/bin/oscam -b -c /etc/tuxbox/config
 killall -9 enigma2
