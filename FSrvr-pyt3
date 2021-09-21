@@ -935,5 +935,7 @@ echo "" >> $OUTPUT
 done < conv.tmp
 rm conv.tmp
 echo ""
+killall -9 oscam
+/usr/bin/oscam  -b -c /etc/tuxbox/config
 
 exit 0
