@@ -11,9 +11,6 @@ opkg install enigma2-plugin-softcams-cccam
 mv /usr/bin/oscam-emu /usr/bin/oscam
 rm -rf /etc/tuxbox/config/oscam-emu  >/dev/null 2>&1
 rm -rf /etc/tuxbox/config/ncam  >/dev/null 2>&1
-rm -rf /etc/init.d/softcam.ncam  >/dev/null 2>&1
-rm -rf /etc/init.d/softcam.oscam-emu  >/dev/null 2>&1
-rm -rf /etc/init.d/softcam.CCcam  >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/softcam.Oscam -Lko /etc/init.d/softcam.Oscam >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/softcam.Ncam -Lko /etc/init.d/softcam.Ncam  >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/softcam.CCcam -Lko /etc/init.d/softcam.CCcam  >/dev/null 2>&1
