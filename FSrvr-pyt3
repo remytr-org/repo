@@ -30,7 +30,7 @@ HTTPSERV3="https://cccamprime.com/cccam48h.php"
 HTTPSERV7="https://cccam-premium.com/free-cccam/"
 HTTPSERV8="https://skyhd.xyz/freetest/test1.php"
 HTTPSERV9="https://cccamiptv.cc/fr/free-cccam/"
-HTTPSERV10="https://www.cccambird2.com/freecccam.php"
+HTTPSERV10="https://www.cccambird.com/freecccam.php"
 HTTPSERV11="https://cccamx.com/v2/getCode.php"
 HTTPSERV12="http://www.premiumcccam.store/TEST24.php"
 HTTPSERV13="https://cccamtiger.com/fcccam/"
@@ -490,7 +490,7 @@ cat $FreeServertmpa21 >> $FreeServer2
 #sed -i "s/^\ *//g" $FreeServertmpb78
 #sed -n 'x;$p' $FreeServertmpb78 > $FreeServertmpb79
 #sed -i 's|like.*||' $FreeServertmpb79 
-#variable="ð"
+#variable="ï¿½"
 #sed -i 's/['"${variable}"'].*//' $FreeServertmpb79 
 #sed 's#^#C: #' $FreeServertmpb79 > $FreeServertmpb80
 #cat $FreeServertmpb80 >> $FreeServer2  
