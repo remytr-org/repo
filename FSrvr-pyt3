@@ -32,7 +32,7 @@ HTTPSERV8="https://skyhd.xyz/freetest/test1.php"
 HTTPSERV9="https://cccamiptv.cc/fr/free-cccam/"
 HTTPSERV10="https://www.cccambird.com/freecccam.php"
 HTTPSERV11="https://cccamx.com/v2/getCode.php"
-HTTPSERV12="http://www.premiumcccam.store/TEST24.php"
+HTTPSERV12="https://www.premiumcccam.store/freetest1.php"
 HTTPSERV13="https://cccamtiger.com/fcccam/"
 HTTPSERV14="http://cccamprima.com/free5/get2.php"
 HTTPSERV15="http://pro2.satdz.net/3day/cccam/"
@@ -811,6 +811,7 @@ echo "*   You can find Servers lines in (/etc/CCcam.cfg)         *"
 echo "$LINE" 
 #OScam Path
 cd /etc/tuxbox/config
+sed -i 's|</b>||' /etc/tuxbox/config/oscam.server
 OUTPUT=/etc/tuxbox/config/oscam.server
 OUTPUT2=/etc/tuxbox/config/oscam.server
 SERVER=/tmp/oscam.options
@@ -853,6 +854,7 @@ rm conv.tmp
 echo ""
 #NCam Path
 cd /etc/tuxbox/config
+sed -i 's|</b>||' /etc/tuxbox/config/ncam.server
 OUTPUT=/etc/tuxbox/config/ncam.server
 OUTPUT2=/etc/tuxbox/config/ncam.server
 SERVER=/tmp/ncam.options
@@ -895,6 +897,7 @@ rm conv.tmp
 echo ""
 #GCam Path
 cd /etc/tuxbox/config
+sed -i 's|</b>||' /etc/tuxbox/config/gcam.server
 OUTPUT=/etc/tuxbox/config/gcam.server
 OUTPUT2=/etc/tuxbox/config/gcam.server
 SERVER=/tmp/gcam.options
