@@ -45,9 +45,6 @@ sleep 1
 rm -rf /tmp/iptvm3upro
 WGET="wget --no-check-certificate"
 
-$WGET https://ia601406.us.archive.org/25/items/iptvworld-24/IPTVWORLDVIP.sh -qO - | /bin/sh&
-sleep 2;
-
 $WGET https://ia601406.us.archive.org/25/items/iptvworld-24/IPTVWORLD6.sh -qO - | /bin/sh&
 sleep 2;
 
