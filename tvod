@@ -3,7 +3,8 @@ opkg remove enigma2-plugin-extensions--turkvod
 curl https://github.com/remytr-org/git_git/raw/master/enigma2-plugin-extensions-turkvod_12.00_all.ipk -Lko /tmp/enigma2-plugin-extensions-turkvod_12.00_all.ipk > /dev/null
 opkg --force-overwrite install /tmp/enigma2-plugin-extensions-turkvod_12.00_all.ipk
 opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-extensions-turkvod_12.00_all.ipk
-
+curl https://github.com/remytr-org/git_git/raw/master/TURKvodLokal.xml -Lko /usr/lib/enigma2/python/Plugins/Extensions/TURKvod/TURKvodLokal.xml >/dev/null 2>&1
+curl https://github.com/remytr-org/git_git/raw/master/stalker.txt -Lko /usr/lib/enigma2/python/Plugins/Extensions/TURKvod/stalker.txt >/dev/null 2>&1
 echo ""
 echo "    ***  TURKVODA GIRINCE SARI TUSA BASINIZ ***"
 sleep 2
