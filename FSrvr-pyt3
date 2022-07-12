@@ -27,20 +27,20 @@ HTTPSERV3="https://cccamprime.com/cccam48h.php"
 #HTTPSERV4="http://freecamtv.com/tss2.php"  
 #HTTPSERV5="https://www.freecamtv.com/try2.php" 
 #HTTPSERV6="https://www.freecamtv.com/try3.php" 
-HTTPSERV7="https://cccam-premium.com/free-cccam/"
-HTTPSERV8="https://skyhd.xyz/freetest/test1.php"
+#HTTPSERV7="https://cccam-premium.com/free-cccam/"
+#HTTPSERV8="https://skyhd.xyz/freetest/test1.php"
 HTTPSERV9="https://cccamiptv.cc/fr/free-cccam/"
-HTTPSERV10="https://www.cccambird.com/freecccam.php"
-HTTPSERV11="https://cccamx.com/v2/getCode.php"
+#HTTPSERV10="https://www.cccambird.com/freecccam.php"
+#HTTPSERV11="https://cccamx.com/v2/getCode.php"
 #HTTPSERV12="https://www.premiumcccam.store/freetest1.php"
-HTTPSERV13="https://cccamtiger.com/fcccam/"
+#HTTPSERV13="https://cccamtiger.com/fcccam/"
 HTTPSERV14="http://cccamprima.com/free5/get2.php"
 #HTTPSERV15="http://pro2.satdz.net/3day/cccam/"
 #HTTPSERV16="http://s2.clinespot.vip/test.php"
 HTTPSERV17="https://cccamia.com/free-cccam/"
 #HTTPSERV18="https://iptvpremiums.com/cccamfree/get.php"
 HTTPSERV19="https://cccamfrei.com/free/get.php"
-HTTPSERV20="https://loulou-cccam.com/"
+#HTTPSERV20="https://loulou-cccam.com/"
 #HTTPSERV21="http://test.linux24.tk/test/"
 #HTTPSERV22="https://cccamserver.live/"
 #HTTPSERV23="http://satunivers.ddns.net/freek.php"
@@ -131,20 +131,20 @@ FreeServertmpa3=/tmp/freeservra3
 FreeServertmpa4=/tmp/freeservra4
 FreeServertmpa5=/tmp/freeservra5
 FreeServertmpa6=/tmp/freeservra6
-FreeServertmpa7=/tmp/freeservra7
-FreeServertmpa8=/tmp/freeservra8
+#FreeServertmpa7=/tmp/freeservra7
+#FreeServertmpa8=/tmp/freeservra8
 FreeServertmpa9=/tmp/freeservra9
-FreeServertmpa10=/tmp/freeservra10
-FreeServertmpa11=/tmp/freeservra11
-FreeServertmpa12=/tmp/freeservra12
-FreeServertmpa13=/tmp/freeservra13
+#FreeServertmpa10=/tmp/freeservra10
+#FreeServertmpa11=/tmp/freeservra11
+#FreeServertmpa12=/tmp/freeservra12
+#FreeServertmpa13=/tmp/freeservra13
 FreeServertmpa14=/tmp/freeservra14
 #FreeServertmpa15=/tmp/freeservra15
 #FreeServertmpa16=/tmp/freeservra16
 FreeServertmpa17=/tmp/freeservra17
 #FreeServertmpa18=/tmp/freeservra18
 FreeServertmpa19=/tmp/freeservra19
-FreeServertmpa20=/tmp/freeservra20
+#FreeServertmpa20=/tmp/freeservra20
 #FreeServertmpa21=/tmp/freeservra21
 #FreeServertmpa22=/tmp/freeservra22
 #FreeServertmpa23=/tmp/freeservra23
@@ -171,7 +171,7 @@ FreeServertmpa60=/tmp/freeservra60
 FreeServertmpa61=/tmp/freeservra61
 FreeServertmpa62=/tmp/freeservra62
 FreeServertmpa63=/tmp/freeservra63
-FreeServertmpa70=/tmp/freeservra70
+#FreeServertmpa70=/tmp/freeservra70
 FreeServertmpa71=/tmp/freeservra71
 FreeServertmpa72=/tmp/freeservra72
 FreeServertmpa73=/tmp/freeservra73
@@ -189,20 +189,20 @@ FreeServertmpe3=/tmp/freeservre3
 FreeServertmpe4=/tmp/freeservre4
 FreeServertmpe5=/tmp/freeservre5
 FreeServertmpe6=/tmp/freeservre6
-FreeServertmpe7=/tmp/freeservre7
-FreeServertmpe8=/tmp/freeservre8
+#FreeServertmpe7=/tmp/freeservre7
+#FreeServertmpe8=/tmp/freeservre8
 FreeServertmpe9=/tmp/freeservre9
-FreeServertmpe10=/tmp/freeservre10
-FreeServertmpe11=/tmp/freeservre11
-FreeServertmpe12=/tmp/freeservre12
-FreeServertmpe13=/tmp/freeservre13
+#FreeServertmpe10=/tmp/freeservre10
+#FreeServertmpe11=/tmp/freeservre11
+#FreeServertmpe12=/tmp/freeservre12
+#FreeServertmpe13=/tmp/freeservre13
 FreeServertmpe14=/tmp/freeservre14
 #FreeServertmpe15=/tmp/freeservre15
 #FreeServertmpe16=/tmp/freeservre16
 FreeServertmpe17=/tmp/freeservre17
 #FreeServertmpe18=/tmp/freeservre18
 FreeServertmpe19=/tmp/freeservre19
-FreeServertmpe20=/tmp/freeservre20
+#FreeServertmpe20=/tmp/freeservre20
 #FreeServertmpe21=/tmp/freeservre21
 #FreeServertmpe22=/tmp/freeservre22
 #FreeServertmpe23=/tmp/freeservre23
@@ -231,20 +231,20 @@ FreeServertmpf3=/tmp/freeservrf3
 FreeServertmpf4=/tmp/freeservrf4
 FreeServertmpf5=/tmp/freeservrf5
 FreeServertmpf6=/tmp/freeservrf6
-FreeServertmpf7=/tmp/freeservrf7
-FreeServertmpf8=/tmp/freeservrf8
+#FreeServertmpf7=/tmp/freeservrf7
+#FreeServertmpf8=/tmp/freeservrf8
 FreeServertmpf9=/tmp/freeservrf9
-FreeServertmpf10=/tmp/freeservrf10
-FreeServertmpf11=/tmp/freeservrf11
-FreeServertmpf12=/tmp/freeservrf12
-FreeServertmpf13=/tmp/freeservrf13
+#FreeServertmpf10=/tmp/freeservrf10
+#FreeServertmpf11=/tmp/freeservrf11
+#FreeServertmpf12=/tmp/freeservrf12
+#FreeServertmpf13=/tmp/freeservrf13
 FreeServertmpf14=/tmp/freeservrf14
 #FreeServertmpf15=/tmp/freeservrf15
 #FreeServertmpf16=/tmp/freeservrf16
 FreeServertmpf17=/tmp/freeservrf17
 #FreeServertmpf18=/tmp/freeservrf18
 FreeServertmpf19=/tmp/freeservrf19
-FreeServertmpf20=/tmp/freeservrf20
+#FreeServertmpf20=/tmp/freeservrf20
 #FreeServertmpf21=/tmp/freeservrf21
 #FreeServertmpf22=/tmp/freeservrf22
 #FreeServertmpf23=/tmp/freeservrf23
@@ -316,13 +316,13 @@ sed -ne '/C:/ p' $FreeServertmpa3 > $FreeServertmpb3
 #sed -ne '/C:/ p' $FreeServertmpa4 > $FreeServertmpb4
 #sed -ne '/C:/ p' $FreeServertmpa5 > $FreeServertmpb5 
 #sed -ne '/C:/ p' $FreeServertmpa6 > $FreeServertmpb6
-sed -ne '/C:/ p' $FreeServertmpa7 > $FreeServertmpb7
-sed -ne '/C:/ p' $FreeServertmpa8 > $FreeServertmpb8
+#sed -ne '/C:/ p' $FreeServertmpa7 > $FreeServertmpb7
+#sed -ne '/C:/ p' $FreeServertmpa8 > $FreeServertmpb8
 sed -ne '/C:/ p' $FreeServertmpa9 > $FreeServertmpb9
-sed -ne '/C:/ p' $FreeServertmpa10 > $FreeServertmpb10
-sed -ne '/C:/ p' $FreeServertmpa11 > $FreeServertmpb11
-sed -ne '/C:/ p' $FreeServertmpa12 > $FreeServertmpb12
-sed -ne '/C :/ p' $FreeServertmpa13 > $FreeServertmpb13
+#sed -ne '/C:/ p' $FreeServertmpa10 > $FreeServertmpb10
+#sed -ne '/C:/ p' $FreeServertmpa11 > $FreeServertmpb11
+#sed -ne '/C:/ p' $FreeServertmpa12 > $FreeServertmpb12
+#sed -ne '/C :/ p' $FreeServertmpa13 > $FreeServertmpb13
 sed -ne '/C:/ p' $FreeServertmpa14 > $FreeServertmpb14
 #sed -ne '/C:/ p' $FreeServertmpa15 > $FreeServertmpb15
 #sed -ne '/C:/ p' $FreeServertmpa16 > $FreeServertmpb16
@@ -358,13 +358,13 @@ FreeServertmpc3=`cat $FreeServertmpb3`
 #FreeServertmpc4=`cat $FreeServertmpb4`
 #FreeServertmpc5=`cat $FreeServertmpb5`
 #FreeServertmpc6=`cat $FreeServertmpb6`
-FreeServertmpc7=`cat $FreeServertmpb7`
-FreeServertmpc8=`cat $FreeServertmpb8`
+#FreeServertmpc7=`cat $FreeServertmpb7`
+#FreeServertmpc8=`cat $FreeServertmpb8`
 FreeServertmpc9=`cat $FreeServertmpb9`
-FreeServertmpc10=`cat $FreeServertmpb10`
-FreeServertmpc11=`cat $FreeServertmpb11`
-FreeServertmpc12=`cat $FreeServertmpb12`
-FreeServertmpc13=`cat $FreeServertmpb13`
+#FreeServertmpc10=`cat $FreeServertmpb10`
+#FreeServertmpc11=`cat $FreeServertmpb11`
+#FreeServertmpc12=`cat $FreeServertmpb12`
+#FreeServertmpc13=`cat $FreeServertmpb13`
 FreeServertmpc14=`cat $FreeServertmpb14`
 #FreeServertmpc15=`cat $FreeServertmpb15`
 #FreeServertmpc16=`cat $FreeServertmpb16`
