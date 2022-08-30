@@ -1,17 +1,55 @@
 #!/bin/sh
-curl https://github.com/remytr-org/git_git/raw/master/remy-openvpn_V1.1_all.ipk -Lko /tmp/remy-openvpn_V1.1_all.ipk
-opkg install openvpn
-rm -rf /etc/openvpn > /dev/null
-opkg --force-overwrite install /tmp/remy-openvpn_V1.1_all.ipk
-opkg install --force-reinstall /tmp/remy-openvpn_V1.1_all.ipk
-rm -rf /tmp/remy-openvpn_V1.1_all.ipk > /dev/null
+
+####################################################################################################
+if find /etc/init.d/openvpn > /dev/null 2>&1 ; then 
+echo 'OpenVPN ...OK'
+sleep 3
 echo ""
-echo "    *** https://www.vpnbook.com/ ***"
+[ -d /tmp/test ] || mkdir -p /tmp/test
+####################################################################################################
+
+/etc/init.d/openvpn stop > /dev/null 2>&1
+/etc/init.d/openvpn stop
 echo ""
-echo "    ***  ADRESINDE ALTTAKI Password YAZAN SiFREYi ALIN ***"
+sleep 3
+rm -r -f /etc/openvpn
+mkdir /etc/openvpn
+curl  --limit-rate 100K      -k -Lbk -A -k -m 8 -m 52 -s  https://www.vpngate.net/en/ > /tmp/test/server 
+sed -ne 's#.*do_openvpn.aspx\([^<]*\).*#\1#p' /tmp/test/server  > /tmp/test/a 
+grep  -i '218.[^<]*' /tmp/test/a > /tmp/test/a2
+sed -n '1,1p'   /tmp/test/a2  > /tmp/test/b
+cd /tmp/test
+cut -d"'" -f 1 b > www
+adresa1=`sed -n '1,1p' www`
+adresa1=$adresa1
+curl -Lbk -m 4555 -m 6555 -k -s   https://www.vpngate.net/en/do_openvpn.aspx$adresa1 > /tmp/test/x1
+sed -ne 's#.*openvpn_download.aspx?\([^<]*\).*#\1#p' /tmp/test/x1  > /tmp/test/x2
+cut -d'"' -f 1 x2 > x3
+sed -n '2,2p' x3 > x4
+sed 's/amp;//g' x4 > x5
+
+adresa2=`sed -n '1,1p' x5`
+adresa2=$adresa2
+curl -Lbk -m 4555 -m 6555 -k -s  https://www.vpngate.net/common/openvpn_download.aspx?$adresa2 > /tmp/test/z1
+
+cat /tmp/test/z1 > /etc/openvpn/Client.conf
+cd /
+rm -rf /tmp/test
+sleep 3
+echo "Aktuální IP: `wget -qO- http://ipecho.net/plain;echo`"
 echo ""
-echo "    ***  ETC/OPENVPN/login.txt dosyasinda alt satira yapistiriniz. ***"
+
+/etc/init.d/openvpn start 
 echo ""
-echo "    ***  OK VEYA EXIT TUSUNA BASINIZ ***"
+sleep 3
+echo "wait 14sec."
+sleep 14
 echo ""
-exit 1
+echo "Now IP    : `wget -qO- http://ipecho.net/plain;echo`"
+echo ""
+else
+echo 'OpenVPN ...not installed!!!'
+exit
+fi
+
+exit 0 
