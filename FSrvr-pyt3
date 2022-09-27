@@ -32,12 +32,12 @@ HTTPSERV33="http://ia601509.us.archive.org/26/items/dreamosat/free-server10.txt"
 HTTPSERV35="https://www.freecamtv.com/try1.php"
 HTTPSERV36="https://www.freecamtv.com/try2.php"
 HTTPSERV37="https://www.freecamtv.com/try3.php" 
-HTTPSERV38="https://cccamas.com/free/get.php"
+#HTTPSERV38="https://cccamas.com/free/get.php"
 #HTTPSERV39="https://iptvpremiums.com/cccamfree/get.php"
-HTTPSERV40="https://cccamx.com/v2/getCode.php" 
+#HTTPSERV40="https://cccamx.com/v2/getCode.php" 
 #HTTPSERV41="https://cccamiptv.co/index.php/free-cccam"
 HTTPSERV42="https://cccamprime.com/cccam48h.php"
-HTTPSERV43="https://cccamfrei.com/free/get.php"
+#HTTPSERV43="https://cccamfrei.com/free/get.php"
 #HTTPSERV44="https://www.tvlivepro.com/free_cccam_48h/"
 HTTPSERV45="https://www.cccambird2.com/freecccam.php" 
 #HTTPSERV46="http://cccameurop.com/testcccam.php"
@@ -109,12 +109,12 @@ FreeServertmpb33=/tmp/freeservrb33
 FreeServertmpb35=/tmp/freeservrb35
 FreeServertmpb36=/tmp/freeservrb36
 FreeServertmpb37=/tmp/freeservrb37
-FreeServertmpb38=/tmp/freeservrb38
+#FreeServertmpb38=/tmp/freeservrb38
 #FreeServertmpb39=/tmp/freeservrb39
-FreeServertmpb40=/tmp/freeservrb40
+#FreeServertmpb40=/tmp/freeservrb40
 #FreeServertmpb41=/tmp/freeservrb41
 FreeServertmpb42=/tmp/freeservrb42
-FreeServertmpb43=/tmp/freeservrb43
+#FreeServertmpb43=/tmp/freeservrb43
 #FreeServertmpb44=/tmp/freeservrb44
 FreeServertmpb45=/tmp/freeservrb45
 FreeServertmpb46=/tmp/freeservrb46
@@ -186,12 +186,12 @@ FreeServertmpa33=/tmp/freeservra33
 FreeServertmpa35=/tmp/freeservra35
 FreeServertmpa36=/tmp/freeservra36
 FreeServertmpa37=/tmp/freeservra37
-FreeServertmpa38=/tmp/freeservra38
+#FreeServertmpa38=/tmp/freeservra38
 #FreeServertmpa39=/tmp/freeservra39
-FreeServertmpa40=/tmp/freeservra40
+#FreeServertmpa40=/tmp/freeservra40
 #FreeServertmpa41=/tmp/freeservra41
 FreeServertmpa42=/tmp/freeservra42
-FreeServertmpa43=/tmp/freeservra43
+#FreeServertmpa43=/tmp/freeservra43
 #FreeServertmpa44=/tmp/freeservra44
 FreeServertmpa45=/tmp/freeservra45
 FreeServertmpa46=/tmp/freeservra46
@@ -241,12 +241,12 @@ $WGET -T 5 -O $FreeServertmpa33 $HTTPSERV33 > /dev/null 2>&1
 $WGET -T 5 -O $FreeServertmpa35 $HTTPSERV35 > /dev/null 2>&1
 $WGET -T 5 -O $FreeServertmpa36 $HTTPSERV36 > /dev/null 2>&1
 $WGET -T 5 -O $FreeServertmpa37 $HTTPSERV37 > /dev/null 2>&1
-$WGET -T 5 -O $FreeServertmpa38 $HTTPSERV38 > /dev/null 2>&1
+#$WGET -T 5 -O $FreeServertmpa38 $HTTPSERV38 > /dev/null 2>&1
 #$WGET -T 5 -O $FreeServertmpa39 $HTTPSERV39 > /dev/null 2>&1
-$WGET -T 5 -O $FreeServertmpa40 $HTTPSERV40 > /dev/null 2>&1
+#$WGET -T 5 -O $FreeServertmpa40 $HTTPSERV40 > /dev/null 2>&1
 #$WGET -T 5 -O $FreeServertmpa41 $HTTPSERV41 > /dev/null 2>&1
 $WGET -T 5 -O $FreeServertmpa42 $HTTPSERV42 > /dev/null 2>&1
-$WGET -T 5 -O $FreeServertmpa43 $HTTPSERV43 > /dev/null 2>&1
+#$WGET -T 5 -O $FreeServertmpa43 $HTTPSERV43 > /dev/null 2>&1
 #$WGET -T 5 -O $FreeServertmpa44 $HTTPSERV44 > /dev/null 2>&1
 $WGET -T 5 -O $FreeServertmpa45 $HTTPSERV45 > /dev/null 2>&1
 #$WGET -T 5 -O $FreeServertmpa46 $HTTPSERV46 > /dev/null 2>&1
@@ -319,12 +319,12 @@ sed -ne '/C:/ p' $FreeServertmpa33 > $FreeServertmpb33
 sed -ne '/C:/ p' $FreeServertmpa35 > $FreeServertmpb35
 sed -ne '/C:/ p' $FreeServertmpa36 > $FreeServertmpb36
 sed -ne '/C:/ p' $FreeServertmpa37 > $FreeServertmpb37
-sed -ne '/c:/ p' $FreeServertmpa38 > $FreeServertmpb38
+#sed -ne '/c:/ p' $FreeServertmpa38 > $FreeServertmpb38
 #sed -ne '/C:/ p' $FreeServertmpa39 > $FreeServertmpb39
-sed -ne '/C:/ p' $FreeServertmpa40 > $FreeServertmpb40
+#sed -ne '/C:/ p' $FreeServertmpa40 > $FreeServertmpb40
 #sed -ne '/C:/ p' $FreeServertmpa41 > $FreeServertmpb41
 sed -ne '/C:/ p' $FreeServertmpa42 > $FreeServertmpb42
-sed -ne '/C :/ p' $FreeServertmpa43 > $FreeServertmpb43
+#sed -ne '/C :/ p' $FreeServertmpa43 > $FreeServertmpb43
 #sed -ne '/C :/ p' $FreeServertmpa44 > $FreeServertmpb44
 cat $FreeServertmpa44 | awk -F "Host  " '/Host  / {print $2}' | sed -e 's|Port  ||' -e "s|User  ||" -e "s|Password  ||" -e 's/<\/th><th>//g' -e "s|</th></tr><th||g" -e "s|id='t1'>||g" -e "s|</th></tr></table><h4><font.*||" > $FreeServertmpb44
 sed -ne '/C:/ p' $FreeServertmpa45 > $FreeServertmpb45
