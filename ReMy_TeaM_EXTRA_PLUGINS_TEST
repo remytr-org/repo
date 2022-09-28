@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "  *OScam_Icam Yuklemeye ayarlanmistir*"
+echo "  *otoserver_indirir*"
+sleep 3
+opkg update
+wget -O /tmp/enigma2-plugin-softcams-oscamicam_11.714_all.ipk "https://github.com/remytr-org/git_git/raw/master/enigma2-plugin-softcams-oscamicam_11.714_all.ipk"
+opkg --force-overwrite install /tmp/enigma2-plugin-softcams-oscamicam_11.714_all.ipk
+opkg install --force-reinstall /tmp/enigma2-plugin-softcams-oscamicam_11.714_all.ipk
+sleep 1
+rm -f /etc/tuxbox/config/Oscamicam/CCcam.cfg
+curl https://github.com/remytr-org/git_git/raw/master/CCcam.cfg -Lko /etc/tuxbox/config/Oscamicam/CCcam.cfg >/dev/null 2>&1
+/usr/bin/oscamicam  -b -c /etc/tuxbox/config
+killall -9 enigma2
