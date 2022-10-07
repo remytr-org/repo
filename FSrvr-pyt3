@@ -28,7 +28,7 @@ HTTPSERV4="https://www.freecamtv.com/try1.php"
 HTTPSERV5="https://www.freecamtv.com/try2.php" 
 HTTPSERV6="https://www.freecamtv.com/try3.php" 
 HTTPSERV7="https://cccam-premium.com/free-cccam/" 
-HTTPSERV8="https://skyhd.xyz/freetest/test1.php"
+#HTTPSERV8="https://skyhd.xyz/freetest/test1.php"
 HTTPSERV9="https://mecccam.com/freetest1.php"
 HTTPSERV10="https://www.cccambird2.com/freecccam.php"
 HTTPSERV11="https://cccamx.com/getCode.php"
@@ -453,9 +453,9 @@ echo $FreeServertmpc30 >> $FreeServer2
 #echo $FreeServertmpc41 >> $FreeServer2 
 #echo $FreeServertmpc42 >> $FreeServer2 
 #skyHD
-curl -d 'g-recaptcha-response=""&submit=Generate Test Cccam Cline' -X POST $HTTPSERV8 > $FreeServertmpa8
-sed -ne 's#<h4><font size="4" color="lime">\([^<]*\).*#\1#p' $FreeServertmpa8 > $FreeServertmpb8
-cat $FreeServertmpb8 >> $FreeServer2
+#curl -d 'g-recaptcha-response=""&submit=Generate Test Cccam Cline' -X POST $HTTPSERV8 > $FreeServertmpa8
+#sed -ne 's#<h4><font size="4" color="lime">\([^<]*\).*#\1#p' $FreeServertmpa8 > $FreeServertmpb8
+#cat $FreeServertmpb8 >> $FreeServer2
 #firecccam.com          
 curl -s -D --limit-rate 100K     -s -k -Lbk -A -k -m 8 -m 52 -d "submit= GET CCCAM " -X POST $HTTPSERV24 $HTTPSERV25 > $FreeServertmpa25
 sed -ne "s#.*action='\([^'<]*\).*#\1#p" $FreeServertmpa25 > $FreeServertmpb25
@@ -474,35 +474,42 @@ curl -s -D --limit-rate 100K     -s -k -Lbk -A -k -m 8 -m 52 -d "submit=GET CCCA
 sed -ne 's#<a href="\([^<]*\)" href.*#\1#p' $FreeServertmpa24 > $FreeServertmpb24
 sed -i 's# #%20#g' $FreeServertmpb24
 sed -i 's#5day#5#g' $FreeServertmpb24
-PATH_J_XM3=$(cat /tmp/freeservrb24)
-curl -s -D --limit-rate 100K     -s -k -Lbk -A -k -m 8 -m 52 -d "submit=GET CCCAM" -X POST "${PATH_J_XM3}"  > $FreeServertmpa24  /dev/null 2>&1
+PATH_J_XM33=$(cat /tmp/freeservrb24)
+curl -s -D --limit-rate 100K     -s -k -Lbk -A -k -m 8 -m 52 -d "submit=GET CCCAM" -X POST "${PATH_J_XM33}"  > $FreeServertmpa24  /dev/null 2>&1
 grep -o "password = '[^']*" $FreeServertmpa24 > $FreeServertmpf24
 sed -i "s/password = '//" $FreeServertmpf24
 PATH_J_XM3=$(cat /tmp/freeservrf24)
 PATH_J_XM4=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
 PATH_J_XM5=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
-curl -d 'password='$PATH_J_XM3'&submit=submit' -d 'Username='$PATH_J_XM4'&Password='$PATH_J_XM5'&addf1= Activation ' -X POST "${PATH_J_XM1}" > $FreeServertmpa25
+curl -d 'password='$PATH_J_XM3'&submit=submit' -d 'Username='$PATH_J_XM4'&Password='$PATH_J_XM5'&addf1= Activation ' -X POST "${PATH_J_XM33}" > $FreeServertmpa25
 sed -ne "s#.*CCCAM</font><br></center><center><font size='5' color='black' >\([^<]*\).*#\1#p" $FreeServertmpa25 > $FreeServertmpb25
 echo "$(<freeservrb25)" >> $FreeServer2
-#firecccam2.com          
+#firecccam2.com                  
 curl -s -D --limit-rate 100K     -s -k -Lbk -A -k -m 8 -m 52 -d "submit= GET CCCAM " -X POST $HTTPSERV21 $HTTPSERV41 > $FreeServertmpa41
 sed -ne "s#.*action='\([^'<]*\).*#\1#p" $FreeServertmpa41 > $FreeServertmpb41
 head -1 $FreeServertmpb41 > $FreeServertmpe41
-sed -i 's# #%20#g' $FreeServertmpe41
 sed 's#^#http://4.cccam.xyz/Free%20cccam%204%20Days/#' $FreeServertmpe41 > $FreeServertmpf41
+sed -i 's# #%20#g' $FreeServertmpf41
 PATH_J_XM=$(cat /tmp/freeservrf41)
-curl -d 'submit=GET CCCAM' -X POST "${PATH_J_XM}" > $FreeServertmpa21
+curl -s -D --limit-rate 100K     -s -k -Lbk -A -k -m 8 -m 52 -d "submit=GET CCCAM" -X POST $HTTPSERV21 "${PATH_J_XM}" > $FreeServertmpa21
+#curl -d 'submit=GET CCCAM' -X POST "${PATH_J_XM}" > $FreeServertmpa24
+sed -ne "s#.*action='\([^'<]*\).*#\1#p" $FreeServertmpa21 > $FreeServertmpb21
+tail -1 $FreeServertmpb21 > $FreeServertmpe21
+sed -i 's# #%20#g' $FreeServertmpe21
+sed 's#^#http://4.cccam.xyz/Free%20cccam%204%20Days/#' $FreeServertmpe21 > $FreeServertmpf21
+PATH_J_XM2=$(cat /tmp/freeservrf21)
+curl -s -D --limit-rate 100K     -s -k -Lbk -A -k -m 8 -m 52 -d "submit=GET CCCAM" -X POST $HTTPSERV21 "${PATH_J_XM2}" > $FreeServertmpa21
 sed -ne 's#<a href="\([^<]*\)" href.*#\1#p' $FreeServertmpa21 > $FreeServertmpb21
 sed -i 's# #%20#g' $FreeServertmpb21
-sed -i 's#4day#4#g' $FreeServertmpb24
-PATH_J_XM1=$(cat /tmp/freeservrb21)
-$WGET -O $FreeServertmpa21 ${PATH_J_XM1} > /dev/null 2>&1
+sed -i 's#4day#4#g' $FreeServertmpb21
+PATH_J_XM33=$(cat /tmp/freeservrb21)
+curl -s -D --limit-rate 100K     -s -k -Lbk -A -k -m 8 -m 52 -d "submit=GET CCCAM" -X POST "${PATH_J_XM33}"  > $FreeServertmpa21  /dev/null 2>&1
 grep -o "password = '[^']*" $FreeServertmpa21 > $FreeServertmpf21
 sed -i "s/password = '//" $FreeServertmpf21
-PATH_J_XM3=$(cat /tmp/freeservrf24)
+PATH_J_XM3=$(cat /tmp/freeservrf21)
 PATH_J_XM4=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
 PATH_J_XM5=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
-curl -d 'password='$PATH_J_XM3'&submit=submit' -d 'Username='$PATH_J_XM4'&Password='$PATH_J_XM5'&addf1= Activation ' -X POST "${PATH_J_XM1}" > $FreeServertmpa41
+curl -d 'password='$PATH_J_XM3'&submit=submit' -d 'Username='$PATH_J_XM4'&Password='$PATH_J_XM5'&addf1= Activation ' -X POST "${PATH_J_XM33}" > $FreeServertmpa41
 sed -ne "s#.*CCCAM</font><br></center><center><font size='5' color='black' >\([^<]*\).*#\1#p" $FreeServertmpa41 > $FreeServertmpb41
 echo "$(<freeservrb41)" >> $FreeServer2
 #rogcam
@@ -597,7 +604,7 @@ cat $FreeServertmpb20 >> $FreeServer2
 #sed -i "s/^\ *//g" $FreeServertmpb78
 #sed -n 'x;$p' $FreeServertmpb78 > $FreeServertmpb79
 #sed -i 's|like.*||' $FreeServertmpb79 
-#variable="đ"
+#variable="d"
 #sed -i 's/['"${variable}"'].*//' $FreeServertmpb79 
 #sed 's#^#C: #' $FreeServertmpb79 > $FreeServertmpb80
 #cat $FreeServertmpb80 >> $FreeServer2  
@@ -635,7 +642,7 @@ cat $FreeServertmpb22 >> $FreeServer2
 #sed 's#$#www.satunivers.net#' $FreeServertmpb23 > $FreeServertmpa23
 #echo "$(<freeservra23)" >> $FreeServer2 
 #tounfite
-#curl -d 'username='$RANDOM'&submit= ŘŞŮŘąŮŠŮ„' -X POST $HTTPSERV29 > $FreeServertmpa29  
+#curl -d 'username='$RANDOM'&submit= RŞURaUŠU„' -X POST $HTTPSERV29 > $FreeServertmpa29  
 #sed -ne 's#.*Host: \([^<]*\).*#\1#p' $FreeServertmpa29 > $FreeServertmpf29
 #sed -ne 's#.*port: \([^<]*\).*#\1#p' $FreeServertmpa29 > $FreeServertmpf30
 #sed -ne 's#.*user: \([^<]*\).*#\1#p' $FreeServertmpa29 > $FreeServertmpf31
@@ -674,7 +681,7 @@ cat $FreeServertmpb76 >> $FreeServer2
 #PATH_J_XM=$(cat /tmp/freeservra29)
 #PATH_J_XM1=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
 #PATH_J_XM2=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
-#curl -d 'password='$PATH_J_XM'&submit=Login' -d 'Username='$PATH_J_XM1'&Password='$PATH_J_XM2'&addf1=ŘŞŮŘąŮŠŮ„' -X POST $HTTPSERV28 > $FreeServertmpb28
+#curl -d 'password='$PATH_J_XM'&submit=Login' -d 'Username='$PATH_J_XM1'&Password='$PATH_J_XM2'&addf1=RŞURaUŠU„' -X POST $HTTPSERV28 > $FreeServertmpb28
 #sed -ne 's#.*Host : \([^<]*\).*#\1#p' $FreeServertmpb28 > $FreeServertmpf28
 #sed -ne 's#.*Port : \([^<]*\).*#\1#p' $FreeServertmpb28 > $FreeServertmpf29
 #sed -ne 's#.*User : \([^<]*\).*#\1#p' $FreeServertmpb28 > $FreeServertmpf30
@@ -693,7 +700,7 @@ cat $FreeServertmpb76 >> $FreeServer2
 PATH_J_XM=$(cat /tmp/freeservra32)
 PATH_J_XM1=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
 PATH_J_XM2=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
-curl -d 'password='$PATH_J_XM'&submit=Login' -d 'Username='$PATH_J_XM1'&Password='$PATH_J_XM2'&addf1=ŘŞŮŘąŮŠŮ„' -X POST $HTTPSERV36 > $FreeServertmpb32
+curl -d 'password='$PATH_J_XM'&submit=Login' -d 'Username='$PATH_J_XM1'&Password='$PATH_J_XM2'&addf1=RŞURaUŠU„' -X POST $HTTPSERV36 > $FreeServertmpb32
 sed -ne 's#.*Host : \([^<]*\).*#\1#p' $FreeServertmpb32 > $FreeServertmpf32
 sed -ne 's#.*Port : \([^<]*\).*#\1#p' $FreeServertmpb32 > $FreeServertmpf33
 sed -ne 's#.*User : \([^<]*\).*#\1#p' $FreeServertmpb32 > $FreeServertmpf34
@@ -783,7 +790,7 @@ cat $FreeServertmpb41 >> $FreeServer2
 PATH_J_XM=$(cat /tmp/freeservra29)
 PATH_J_XM1=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
 PATH_J_XM2=$(echo "$((1000 + RANDOM % 9999))$((RANDOM % 9999))")
-curl -d 'password='$PATH_J_XM'&submit=Login' -d 'Username='$PATH_J_XM1'&Password='$PATH_J_XM2'&addf1= Activation ŘŞŘŁŮŮŠŘŻ ' -X POST $HTTPSERV40 > $FreeServertmpa40
+curl -d 'password='$PATH_J_XM'&submit=Login' -d 'Username='$PATH_J_XM1'&Password='$PATH_J_XM2'&addf1= Activation RŞRLU?UŠRZ ' -X POST $HTTPSERV40 > $FreeServertmpa40
 sed -ne "s#.*CCCAM</font><br></center><center><font size='5' color='green' >\([^<]*\).*#\1#p" $FreeServertmpa40 > $FreeServertmpb40
 echo "$(<freeservrb40)" >> $FreeServer2
 #volksat 
