@@ -65,6 +65,8 @@ curl -Lko /tmp/uy.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/st
 curl -Lko /tmp/vn_fptplay.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/vn_fptplay.m3u"
 sleep 1
 rm -rf /tmp/iptvm3upro
+sleep 2;
+exit 0
 WGET="wget --no-check-certificate"
 
 $WGET https://ia601406.us.archive.org/25/items/iptvworld-24/IPTVWORLDVIP.sh -qO - | /bin/sh&
