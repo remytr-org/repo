@@ -1,10 +1,10 @@
 #!/bin/sh
 opkg remove enigma2-plugin-extensions-remyteam-premium
 rm -rf /usr/lib/enigma2/python/Components/Renderer/ReMyAnimatedPicsmap.pyo > /dev/null
-curl https://github.com/remytr-org/git_git/raw/master/enigma2-plugin-extensions-remyteam-premium_V7.0_all.ipk -Lko /tmp/enigma2-plugin-extensions-remyteam-premium_V7.0_all.ipk
-opkg --force-overwrite install /tmp/enigma2-plugin-extensions-remyteam-premium_V7.0_all.ipk
-opkg install --force-reinstall /tmp/enigma2-plugin-extensions-remyteam-premium_V7.0_all.ipk
-rm -f /tmp/enigma2-plugin-extensions-remyteam-premium_V7.0_all.ipk
+curl https://github.com/remytr-org/git_git/raw/master/enigma2-plugin-extensions-remyteam-premium_V7.1_all.ipk -Lko /tmp/enigma2-plugin-extensions-remyteam-premium_V7.1_all.ipk
+opkg --force-overwrite install /tmp/enigma2-plugin-extensions-remyteam-premium_V7.1_all.ipk
+opkg install --force-reinstall /tmp/enigma2-plugin-extensions-remyteam-premium_V7.1_all.ipk
+rm -f /tmp/enigma2-plugin-extensions-remyteam-premium_V7.1_all.ipk
 echo  'YouTube KANALIMA ABONE OLARAK TAKIP EDEBILIRSINIZ'
 echo  'https://www.youtube.com/c/ReMyTr'
 sleep 2
