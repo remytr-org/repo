@@ -45,9 +45,7 @@ curl -Lko /tmp/us_adultiptv.m3u "https://raw.githubusercontent.com/iptv-org/iptv
 curl -Lko /tmp/us_adultswim.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_adultswim.m3u"
 curl -Lko /tmp/us_bumblebee.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_bumblebee.m3u"
 curl -Lko /tmp/us_distro.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_distro.m3u"
-curl -Lko /tmp/us_fubo.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_fubo.m3u"
 curl -Lko /tmp/us_glewedtv.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_glewedtv.m3u"
-curl -Lko /tmp/us_imdbtv.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_imdbtv.m3u"
 curl -Lko /tmp/us_klowdtv.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_klowdtv.m3uv
 curl -Lko /tmp/us_localbtv.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_localbtv.m3u"
 curl -Lko /tmp/us_pbs.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_pbs.m3u"
