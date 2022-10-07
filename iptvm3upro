@@ -1,8 +1,0 @@
-#!/bin/sh
-cd /tmp
-rm -rf /tmp/*.m3u
-WGET="wget --no-check-certificate"
-
-$WGET https://github.com/remytr-org/repo/raw/master/iptvm3upro.sh -qO - | /bin/sh&
-sleep 2;
-exit 0
