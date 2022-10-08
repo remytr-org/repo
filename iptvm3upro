@@ -63,10 +63,13 @@ curl -Lko /tmp/us_wfmz.m3u "https://raw.githubusercontent.com/iptv-org/iptv/mast
 curl -Lko /tmp/us_xumo.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/us_xumo.m3u"
 curl -Lko /tmp/uy.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/uy.m3u"
 curl -Lko /tmp/vn_fptplay.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/vn_fptplay.m3u"
-curl https://github.com/remytr-org/repo/raw/master/IPTVWORLDVIP.sh -Lko /tmp/IPTVWORLDVIP.sh && chmod 0755 /tmp/IPTVWORLDVIP.sh && /tmp/IPTVWORLDVIP.sh && rm -f /tmp/IPTVWORLDVIP.sh > /dev/null 2>&1
+curl https://github.com/remytr-org/repo/raw/master/IPTVWORLDVIP.sh -Lko /tmp/IPTVWORLDVIP.sh
+sleep 1
 
+cd /tmp; chmod 755 /tmp/IPTVWORLDVIP.sh
+/tmp/IPTVWORLDVIP.sh
 sleep 1
 rm -rf /tmp/iptvm3upro
-
+rm -f /tmp/IPTVWORLDVIP.sh
 sleep 1;
 exit 0
