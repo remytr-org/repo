@@ -12,7 +12,7 @@ curl -Lko /tmp/ReMy_XxX.m3u "https://raw.githubusercontent.com/remytr-org/git_gi
 
 curl -Lko /tmp/be.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/be.m3u"
 
-curl -Lko /tmp/XX-PORN-fr.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/fr.m3u"
+curl -Lko /tmp/fr.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/fr.m3u"
 
 curl -Lko /tmp/KIBRIS_TV.m3u "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cy.m3u"
 
