@@ -2,9 +2,9 @@
 opkg remove enigma2-plugin-extensions--turkvod
 opkg install python3-requests
 opkg install python3-pyexecjs
-curl https://github.com/remytr-org/git_git/raw/master/enigma2-plugin-extensions-turkvod_13_PY310.ipk -Lko /tmp/enigma2-plugin-extensions-turkvod_13_PY310.ipk > /dev/null
-opkg --force-overwrite install /tmp/enigma2-plugin-extensions-turkvod_13_PY310.ipk
-opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-extensions-turkvod_13_PY310.ipk
+curl https://github.com/remytr-org/git_git/raw/master/enigma2-plugin-extensions-turkvod_14_PY311_all.ipk -Lko /tmp/enigma2-plugin-extensions-turkvod_14_PY311_all.ipk > /dev/null
+opkg --force-overwrite install /tmp/enigma2-plugin-extensions-turkvod_14_PY311_all.ipk
+opkg install --force-reinstall --force-depends /tmp/enigma2-plugin-extensions-turkvod_14_PY311_all.ipk
 curl https://github.com/remytr-org/git_git/raw/master/TURKvodLokal.xml -Lko /usr/lib/enigma2/python/Plugins/Extensions/TURKvod/TURKvodLokal.xml >/dev/null 2>&1
 curl https://github.com/remytr-org/git_git/raw/master/stalker.txt -Lko /usr/lib/enigma2/python/Plugins/Extensions/TURKvod/stalker.txt >/dev/null 2>&1
 sleep 1
